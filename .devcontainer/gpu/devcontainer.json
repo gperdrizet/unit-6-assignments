@@ -39,7 +39,7 @@
 			],
 			
 			// Disable automatic port forwarding to give explicit control
-			"remote.restoreForwardedPorts": false,
+			"remote.restoreForwardedPorts": false
 
 		},
 
@@ -49,9 +49,8 @@
 		  "-dbaeumer.vscode-eslint",                // Explicitly exclude ESLint (not needed for Python projects)
 		  "ms-python.python",                       // Core Python language support, IntelliSense, debugging
 		  "ms-toolsai.jupyter",                     // Jupyter notebook support for interactive data science
-		  "streetsidesoftware.code-spell-checker",  // Spell checking for code and documentation
-		  "ms-toolsai.tensorboard",                 // TensorBoard extension
-		  "optuna.optuna-dashboard"                 // Optuna dashboard extension
+		  "ms-toolsai.jupyter-renderers",           // ipywidgets and rich output rendering support
+		  "streetsidesoftware.code-spell-checker"   // Spell checking for code and documentation
 		]
 	  }
 	},
@@ -61,7 +60,7 @@
 	"onCreateCommand": "",
 
 	// Use 'postCreateCommand' to run commands once after the container is created
-	"postCreateCommand": "mkdir -p logs && mkdir -p models && mkdir -p data",
+	"postCreateCommand": "mkdir -p models && pip install -r requirements.txt",
 
 	// Use 'postAttachCommand' to run TensorBoard
 	"postAttachCommand": ""

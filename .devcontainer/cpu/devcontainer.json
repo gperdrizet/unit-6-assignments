@@ -45,19 +45,18 @@
 		  "-dbaeumer.vscode-eslint",                // Explicitly exclude ESLint (not needed for Python projects)
 		  "ms-python.python",                       // Core Python language support, IntelliSense, debugging
 		  "ms-toolsai.jupyter",                     // Jupyter notebook support for interactive data science
-		  "streetsidesoftware.code-spell-checker",  // Spell checking for code and documentation
-		  "ms-toolsai.tensorboard",                 // TensorBoard extension
-		  "optuna.optuna-dashboard"                 // Optuna dashboard extension
+		  "ms-toolsai.jupyter-renderers",           // ipywidgets and rich output rendering support
+		  "streetsidesoftware.code-spell-checker"   // Spell checking for code and documentation
 		]
 	  }
 	},
 
 	// Use 'onCreateCommand' to run commands once when the container is created
 	// This runs only on initial container creation, not on subsequent starts/attaches
-	"onCreateCommand": "mkdir -p logs && mkdir -p models && mkdir -p data",
+	"onCreateCommand": "mkdir -p models",
 
 	// Use 'postCreateCommand' to run commands once after the container is created
-	"postCreateCommand": "",
+	"postCreateCommand": "mkdir -p models && pip install -r requirements.txt",
 
 	// Use 'postAttachCommand' to run commands each time a user connects to the container
 	"postAttachCommand": ""
