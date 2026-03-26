@@ -1,0 +1,15 @@
+ipykernel
+ipywidgets
+langchain
+langchain-classic
+langchain-community
+langchain-huggingface
+langchain-chroma
+langchain-text-splitters
+pypdf
+gradio
+sentence-transformers
+transformers
+torch
+accelerate
+diffusers
