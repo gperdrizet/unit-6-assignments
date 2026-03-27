@@ -3,3 +3,4 @@ __pycache__
 !.vscode/settings.json
 models
 solutions
+image_gen_benchmark/__pycache__

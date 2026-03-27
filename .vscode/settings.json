@@ -1,8 +1,22 @@
 {
     "cSpell.words": [
+        "beautifulsoup",
+        "chromadb",
+        "DALL",
+        "DDIM",
         "ipywidgets",
+        "LAION",
         "langchain",
+        "pixart",
+        "PNDM",
+        "psutil",
         "pypdf",
-        "torchvision"
+        "schnell",
+        "SDXL",
+        "sentencepiece",
+        "stabilityai",
+        "submodels",
+        "torchvision",
+        "untimed"
     ]
 }

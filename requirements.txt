@@ -1,14 +1,21 @@
+# Packages installed on top of the devcontainer base image (gperdrizet/llms-gpu).
+# The base image already includes: torch, transformers, accelerate, langchain
+# and its sub-packages, gradio, sentence-transformers, and chromadb.
+#
+# Do NOT add torchvision here — the pip wheel conflicts with the base image's
+# custom-compiled torch build (Pascal GPU support, sm_60/sm_61).
+#
+# For a complete standalone requirements file (outside the devcontainer),
+# see requirements-complete.txt.
+
+# --- Jupyter -----------------------------------------------------------------
 ipykernel
 ipywidgets
-langchain
-langchain-community
-langchain-huggingface
-langchain-chroma
-langchain-text-splitters
-pypdf
-gradio
-sentence-transformers
-transformers
-torchvision==0.20.1
-accelerate
+
+# --- Image generation --------------------------------------------------------
 diffusers
+sentencepiece       # tokenizer for PixArt and other models
+beautifulsoup4      # caption cleaning used by some diffusers pipelines
+
+# --- Benchmark ---------------------------------------------------------------
+psutil              # system RAM polling in src/memory_monitor.py

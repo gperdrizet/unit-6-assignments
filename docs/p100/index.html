@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P100 Results — Image Generation Benchmark</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 1100px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+    h1 { border-bottom: 2px solid #ddd; padding-bottom: .5rem; }
+    h2 { margin-top: 2rem; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .9rem; }
+    th, td { border: 1px solid #ccc; padding: .4rem .65rem; text-align: left; }
+    th { background: #f5f5f5; }
+    .oom { color: #c00; }
+    .note { color: #888; font-style: italic; }
+    nav { margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+
+<nav><a href="../">← Back to overview</a></nav>
+
+<h1>Tesla P100-PCIE — Benchmark Results</h1>
+<p><strong>GPU:</strong> Tesla P100-PCIE &nbsp;|&nbsp; <strong>VRAM:</strong> 16 GB &nbsp;|&nbsp; <strong>Architecture:</strong> Pascal (sm_60)</p>
+<p><strong>Prompt:</strong> <em>"a turtle and a bird together in a forest"</em> &nbsp;|&nbsp; <strong>Resolution:</strong> 512 × 512</p>
+
+<!-- =========================================================
+     RESULTS TABLES
+     Fill in after running:
+       python image_gen_benchmark/benchmark.py --hardware p100
+     ========================================================= -->
+
+<h2>Generation time (seconds, median of 3 replicates)</h2>
+<p class="note">TODO — populate after benchmark run.</p>
+
+<h2>Peak GPU VRAM (MB)</h2>
+<p class="note">TODO — populate after benchmark run.</p>
+
+<h2>Peak system RAM (MB)</h2>
+<p class="note">TODO — populate after benchmark run.</p>
+
+<h2>Image gallery</h2>
+<p class="note">TODO — populate after benchmark run.</p>
+
+<hr>
+<p class="note">Raw data: <a href="../data/p100/benchmark_results.json">benchmark_results.json</a></p>
+
+</body>
+</html>

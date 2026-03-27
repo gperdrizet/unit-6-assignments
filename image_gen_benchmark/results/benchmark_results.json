@@ -1,0 +1,107 @@
+[
+  {
+    "model_id": "CompVis/stable-diffusion-v1-4",
+    "model_short": "sd1_4",
+    "mode": "gpu_only",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": false,
+    "load_time_s": 56.162,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 16.718,
+        "error": null,
+        "image_path": "src/results/images/sd1_4_gpu_only_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 16.393,
+        "error": null,
+        "image_path": "src/results/images/sd1_4_gpu_only_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 16.411,
+        "error": null,
+        "image_path": "src/results/images/sd1_4_gpu_only_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 3204.5,
+    "peak_gpu_vram_mb": 3519.1
+  },
+  {
+    "model_id": "CompVis/stable-diffusion-v1-4",
+    "model_short": "sd1_4",
+    "mode": "model_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": true,
+    "load_time_s": 2.508,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 19.136,
+        "error": null,
+        "image_path": "src/results/images/sd1_4_model_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 18.067,
+        "error": null,
+        "image_path": "src/results/images/sd1_4_model_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 18.193,
+        "error": null,
+        "image_path": "src/results/images/sd1_4_model_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 5410.9,
+    "peak_gpu_vram_mb": 2707.8
+  },
+  {
+    "model_id": "CompVis/stable-diffusion-v1-4",
+    "model_short": "sd1_4",
+    "mode": "sequential_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": true,
+    "load_time_s": 2.435,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 40.125,
+        "error": null,
+        "image_path": "src/results/images/sd1_4_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 40.231,
+        "error": null,
+        "image_path": "src/results/images/sd1_4_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 40.505,
+        "error": null,
+        "image_path": "src/results/images/sd1_4_sequential_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 7238.6,
+    "peak_gpu_vram_mb": 1463.6
+  }
+]

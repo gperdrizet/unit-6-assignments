@@ -1,0 +1,38 @@
+# Complete requirements for running the solutions outside the devcontainer.
+# For use with a plain venv or any environment that does not have the
+# devcontainer base image pre-installed.
+#
+# Install with:
+#   pip install -r requirements-complete.txt
+#
+# Note: torch is NOT pinned here — pip will install the latest CPU build by
+# default. For GPU support, install torch separately first following the
+# official instructions at https://pytorch.org/get-started/locally before
+# running this file.
+
+# --- Core ML frameworks ------------------------------------------------------
+transformers
+accelerate
+diffusers
+sentencepiece
+beautifulsoup4
+
+# --- LangChain stack (hr_assistant) ------------------------------------------
+langchain
+langchain-community
+langchain-huggingface
+langchain-chroma
+langchain-text-splitters
+pypdf
+sentence-transformers
+chromadb
+
+# --- UI ----------------------------------------------------------------------
+gradio
+
+# --- Benchmark (src/benchmark.py + src/memory_monitor.py) -------------------
+psutil
+
+# --- Jupyter -----------------------------------------------------------------
+ipykernel
+ipywidgets
