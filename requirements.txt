@@ -9,6 +9,6 @@ pypdf
 gradio
 sentence-transformers
 transformers
-torch
+torchvision==0.20.1
 accelerate
 diffusers
