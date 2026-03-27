@@ -1,0 +1,110 @@
+[
+  {
+    "hardware": "gtx1070",
+    "model_id": "CompVis/stable-diffusion-v1-4",
+    "model_short": "sd1_4",
+    "mode": "gpu_only",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": true,
+    "load_time_s": 10.281,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 16.553,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_gpu_only_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 16.627,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_gpu_only_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 16.705,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_gpu_only_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 3078.7,
+    "peak_gpu_vram_mb": 3519.1
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "CompVis/stable-diffusion-v1-4",
+    "model_short": "sd1_4",
+    "mode": "model_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": true,
+    "load_time_s": 2.292,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 18.684,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_model_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 18.401,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_model_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 18.631,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_model_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 5368.2,
+    "peak_gpu_vram_mb": 2707.8
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "CompVis/stable-diffusion-v1-4",
+    "model_short": "sd1_4",
+    "mode": "sequential_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": true,
+    "load_time_s": 2.478,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 40.587,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 39.775,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 40.45,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_sequential_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 7151.1,
+    "peak_gpu_vram_mb": 1463.6
+  }
+]
