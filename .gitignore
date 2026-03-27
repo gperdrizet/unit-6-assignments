@@ -1,8 +1,5 @@
 __pycache__
 .vscode
-.vscode/settings.json
-.env
-data
-logs
+!.vscode/settings.json
 models
 solutions
