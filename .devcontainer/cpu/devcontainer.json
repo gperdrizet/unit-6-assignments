@@ -37,6 +37,7 @@
 			],
 			
 			// Disable automatic port forwarding to give explicit control
+			"remote.autoForwardPorts": false,
 			"remote.restoreForwardedPorts": false
 		},
 
@@ -50,6 +51,15 @@
 		  "streetsidesoftware.code-spell-checker"   // Spell checking for code and documentation
 		]
 	  }
+	},
+
+	// Pre-forward the Gradio port
+	"forwardPorts": [7860],
+	"portsAttributes": {
+		"7860": {
+			"label": "Gradio",
+			"onAutoForward": "notify"
+		}
 	},
 
 	// Use 'onCreateCommand' to run commands once when the container is created
