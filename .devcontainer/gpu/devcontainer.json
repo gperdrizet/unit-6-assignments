@@ -48,11 +48,12 @@
 		// Add the IDs of VS code extensions you want to install here
 		// These extensions provide Python development, documentation, and project management support
 		"extensions": [
-		  "-dbaeumer.vscode-eslint",                // Explicitly exclude ESLint (not needed for Python projects)
 		  "ms-python.python",                       // Core Python language support, IntelliSense, debugging
 		  "ms-toolsai.jupyter",                     // Jupyter notebook support for interactive data science
 		  "ms-toolsai.jupyter-renderers",           // ipywidgets and rich output rendering support
-		  "streetsidesoftware.code-spell-checker"   // Spell checking for code and documentation
+		  "streetsidesoftware.code-spell-checker",  // Spell checking for code and documentation
+		  "github.copilot",                         // GitHub Copilot AI code completions
+		  "github.copilot-chat"                     // GitHub Copilot Chat interface
 		]
 	  }
 	},

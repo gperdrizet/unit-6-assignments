@@ -8,31 +8,43 @@
     "height": 512,
     "width": 512,
     "steps": 30,
-    "cached_at_load": true,
-    "load_time_s": 10.281,
+    "cached_at_load": false,
+    "load_time_s": 61.802,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 16.553,
+        "elapsed_s": 15.998,
         "error": null,
         "image_path": "docs/images/gtx1070/sd1_4_gpu_only_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 16.627,
+        "elapsed_s": 16.031,
         "error": null,
         "image_path": "docs/images/gtx1070/sd1_4_gpu_only_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 16.705,
+        "elapsed_s": 16.019,
         "error": null,
         "image_path": "docs/images/gtx1070/sd1_4_gpu_only_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 16.05,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_gpu_only_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 16.055,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_gpu_only_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 3078.7,
+    "peak_system_ram_mb": 3175.2,
     "peak_gpu_vram_mb": 3519.1
   },
   {
@@ -45,30 +57,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 2.292,
+    "load_time_s": 5.357,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 18.684,
+        "elapsed_s": 18.475,
         "error": null,
         "image_path": "docs/images/gtx1070/sd1_4_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 18.401,
+        "elapsed_s": 18.64,
         "error": null,
         "image_path": "docs/images/gtx1070/sd1_4_model_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 18.631,
+        "elapsed_s": 18.322,
         "error": null,
         "image_path": "docs/images/gtx1070/sd1_4_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 18.396,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 18.416,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 5368.2,
+    "peak_system_ram_mb": 6785.0,
     "peak_gpu_vram_mb": 2707.8
   },
   {
@@ -81,31 +105,43 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 2.478,
+    "load_time_s": 4.817,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 40.587,
+        "elapsed_s": 49.065,
         "error": null,
         "image_path": "docs/images/gtx1070/sd1_4_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 39.775,
+        "elapsed_s": 48.147,
         "error": null,
         "image_path": "docs/images/gtx1070/sd1_4_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 40.45,
+        "elapsed_s": 49.02,
         "error": null,
         "image_path": "docs/images/gtx1070/sd1_4_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 49.54,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 48.566,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd1_4_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 7151.1,
-    "peak_gpu_vram_mb": 1463.6
+    "peak_system_ram_mb": 8244.6,
+    "peak_gpu_vram_mb": 1463.5
   },
   {
     "hardware": "gtx1070",
@@ -117,31 +153,43 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": false,
-    "load_time_s": 55.934,
+    "load_time_s": 51.946,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 15.475,
+        "elapsed_s": 14.714,
         "error": null,
         "image_path": "docs/images/gtx1070/sd2_1_base_gpu_only_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 15.474,
+        "elapsed_s": 14.808,
         "error": null,
         "image_path": "docs/images/gtx1070/sd2_1_base_gpu_only_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 15.455,
+        "elapsed_s": 14.826,
         "error": null,
         "image_path": "docs/images/gtx1070/sd2_1_base_gpu_only_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 14.851,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_gpu_only_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 14.832,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_gpu_only_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 3039.5,
-    "peak_gpu_vram_mb": 3359.6
+    "peak_system_ram_mb": 8948.5,
+    "peak_gpu_vram_mb": 3361.6
   },
   {
     "hardware": "gtx1070",
@@ -153,19 +201,19 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 2.366,
+    "load_time_s": 4.631,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 17.019,
+        "elapsed_s": 17.152,
         "error": null,
         "image_path": "docs/images/gtx1070/sd2_1_base_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 17.24,
+        "elapsed_s": 17.095,
         "error": null,
         "image_path": "docs/images/gtx1070/sd2_1_base_model_offload_rep2.png"
       },
@@ -174,9 +222,21 @@
         "elapsed_s": 17.344,
         "error": null,
         "image_path": "docs/images/gtx1070/sd2_1_base_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 17.155,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 17.076,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 5336.9,
+    "peak_system_ram_mb": 9812.3,
     "peak_gpu_vram_mb": 2138.6
   },
   {
@@ -189,30 +249,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 4.408,
+    "load_time_s": 4.587,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 41.25,
+        "elapsed_s": 52.804,
         "error": null,
         "image_path": "docs/images/gtx1070/sd2_1_base_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 40.385,
+        "elapsed_s": 52.685,
         "error": null,
         "image_path": "docs/images/gtx1070/sd2_1_base_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 41.009,
+        "elapsed_s": 53.472,
         "error": null,
         "image_path": "docs/images/gtx1070/sd2_1_base_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 52.196,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 51.334,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 7027.2,
+    "peak_system_ram_mb": 10876.2,
     "peak_gpu_vram_mb": 882.5
   },
   {
@@ -225,9 +297,9 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": false,
-    "load_time_s": null,
-    "load_error": "CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 51.50 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.59 GiB memory in use. Of the allocated memory 6.23 GiB is allocated by PyTorch, and 260.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
-    "warmup_error": null,
+    "load_time_s": 99.202,
+    "load_error": null,
+    "warmup_error": "CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 60.50 MiB is free. Including non-PyTorch memory, this process has 7.26 GiB memory in use. Of the allocated memory 6.86 GiB is allocated by PyTorch, and 304.13 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
     "replicates": [],
     "peak_system_ram_mb": null,
     "peak_gpu_vram_mb": null
@@ -242,31 +314,43 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 8.309,
+    "load_time_s": 10.728,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 32.027,
+        "elapsed_s": 32.413,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 32.022,
+        "elapsed_s": 32.605,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_model_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 31.916,
+        "elapsed_s": 32.285,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 32.586,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 32.49,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 15373.1,
-    "peak_gpu_vram_mb": 5470.9
+    "peak_system_ram_mb": 19124.9,
+    "peak_gpu_vram_mb": 5277.0
   },
   {
     "hardware": "gtx1070",
@@ -278,30 +362,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 4.245,
+    "load_time_s": 9.527,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 79.391,
+        "elapsed_s": 106.748,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 79.261,
+        "elapsed_s": 105.173,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 79.537,
+        "elapsed_s": 111.123,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 105.837,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 106.65,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 18805.3,
+    "peak_system_ram_mb": 20446.6,
     "peak_gpu_vram_mb": 777.3
   },
   {
@@ -314,9 +410,9 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": false,
-    "load_time_s": null,
-    "load_error": "CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 46.69 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.61 GiB memory in use. Of the allocated memory 6.25 GiB is allocated by PyTorch, and 264.96 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
-    "warmup_error": null,
+    "load_time_s": 101.549,
+    "load_error": null,
+    "warmup_error": "CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 54.50 MiB is free. Including non-PyTorch memory, this process has 7.27 GiB memory in use. Of the allocated memory 6.86 GiB is allocated by PyTorch, and 310.84 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
     "replicates": [],
     "peak_system_ram_mb": null,
     "peak_gpu_vram_mb": null
@@ -331,31 +427,43 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 3.736,
+    "load_time_s": 10.501,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 6.529,
+        "elapsed_s": 7.08,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_turbo_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 6.435,
+        "elapsed_s": 7.605,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_turbo_model_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 6.398,
+        "elapsed_s": 7.563,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_turbo_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 7.715,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_turbo_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 8.016,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_turbo_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 20950.5,
-    "peak_gpu_vram_mb": 5450.5
+    "peak_system_ram_mb": 20843.7,
+    "peak_gpu_vram_mb": 5248.4
   },
   {
     "hardware": "gtx1070",
@@ -367,30 +475,42 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 3.695,
+    "load_time_s": 9.72,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 10.267,
+        "elapsed_s": 14.279,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_turbo_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 10.275,
+        "elapsed_s": 15.027,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_turbo_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 10.45,
+        "elapsed_s": 15.543,
         "error": null,
         "image_path": "docs/images/gtx1070/sdxl_turbo_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 14.333,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_turbo_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 13.309,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_turbo_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 20806.2,
+    "peak_system_ram_mb": 22803.4,
     "peak_gpu_vram_mb": 776.6
   },
   {
@@ -404,7 +524,7 @@
     "steps": 28,
     "cached_at_load": false,
     "load_time_s": null,
-    "load_error": "CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 156.94 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.66 GiB memory in use. Of the allocated memory 6.44 GiB is allocated by PyTorch, and 113.65 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "load_error": "The read operation timed out",
     "warmup_error": null,
     "replicates": [],
     "peak_system_ram_mb": null,
@@ -420,9 +540,9 @@
     "width": 512,
     "steps": 28,
     "cached_at_load": true,
-    "load_time_s": 4.889,
+    "load_time_s": 10.058,
     "load_error": null,
-    "warmup_error": "CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 49.06 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.78 GiB memory in use. Of the allocated memory 6.66 GiB is allocated by PyTorch, and 13.04 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "warmup_error": "CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 100.50 MiB is free. Including non-PyTorch memory, this process has 7.22 GiB memory in use. Of the allocated memory 7.10 GiB is allocated by PyTorch, and 13.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
     "replicates": [],
     "peak_system_ram_mb": null,
     "peak_gpu_vram_mb": null
@@ -437,12 +557,43 @@
     "width": 512,
     "steps": 28,
     "cached_at_load": true,
-    "load_time_s": null,
-    "load_error": "CUDA out of memory. Tried to allocate 432.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 49.06 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.78 GiB memory in use. Of the allocated memory 6.66 GiB is allocated by PyTorch, and 13.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "load_time_s": 10.463,
+    "load_error": null,
     "warmup_error": null,
-    "replicates": [],
-    "peak_system_ram_mb": null,
-    "peak_gpu_vram_mb": null
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 100.352,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd3_5_medium_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 100.877,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd3_5_medium_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 100.616,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd3_5_medium_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 99.665,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd3_5_medium_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 100.877,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd3_5_medium_sequential_offload_rep5.png"
+      }
+    ],
+    "peak_system_ram_mb": 49160.4,
+    "peak_gpu_vram_mb": 1323.0
   },
   {
     "hardware": "gtx1070",
@@ -455,7 +606,7 @@
     "steps": 4,
     "cached_at_load": false,
     "load_time_s": null,
-    "load_error": "CUDA out of memory. Tried to allocate 74.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 67.75 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.78 GiB memory in use. Of the allocated memory 6.66 GiB is allocated by PyTorch, and 13.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "load_error": "CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 50.50 MiB is free. Including non-PyTorch memory, this process has 7.27 GiB memory in use. Of the allocated memory 7.05 GiB is allocated by PyTorch, and 115.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
     "warmup_error": null,
     "replicates": [],
     "peak_system_ram_mb": null,
@@ -471,9 +622,9 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 6.137,
+    "load_time_s": 14.1,
     "load_error": null,
-    "warmup_error": "CUDA out of memory. Tried to allocate 74.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 65.81 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.78 GiB memory in use. Of the allocated memory 6.66 GiB is allocated by PyTorch, and 13.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "warmup_error": "CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 116.50 MiB is free. Including non-PyTorch memory, this process has 7.20 GiB memory in use. Of the allocated memory 7.08 GiB is allocated by PyTorch, and 13.04 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
     "replicates": [],
     "peak_system_ram_mb": null,
     "peak_gpu_vram_mb": null
@@ -488,31 +639,43 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 6.842,
+    "load_time_s": 14.633,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 42.81,
+        "elapsed_s": 48.127,
         "error": null,
         "image_path": "docs/images/gtx1070/sd3_5_large_turbo_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 42.716,
+        "elapsed_s": 48.207,
         "error": null,
         "image_path": "docs/images/gtx1070/sd3_5_large_turbo_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 43.455,
+        "elapsed_s": 48.379,
         "error": null,
         "image_path": "docs/images/gtx1070/sd3_5_large_turbo_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 48.122,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd3_5_large_turbo_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 48.463,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd3_5_large_turbo_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 66127.4,
-    "peak_gpu_vram_mb": 1062.3
+    "peak_system_ram_mb": 71352.6,
+    "peak_gpu_vram_mb": 1063.0
   },
   {
     "hardware": "gtx1070",
@@ -525,7 +688,7 @@
     "steps": 4,
     "cached_at_load": false,
     "load_time_s": null,
-    "load_error": "CUDA out of memory. Tried to allocate 80.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 107.81 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.58 GiB memory in use. Of the allocated memory 6.47 GiB is allocated by PyTorch, and 7.69 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "load_error": "CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 148.44 MiB is free. Including non-PyTorch memory, this process has 7.18 GiB memory in use. Of the allocated memory 7.06 GiB is allocated by PyTorch, and 7.67 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
     "warmup_error": null,
     "replicates": [],
     "peak_system_ram_mb": null,
@@ -541,9 +704,9 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 7.944,
+    "load_time_s": 15.733,
     "load_error": null,
-    "warmup_error": "CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 183.06 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.51 GiB memory in use. Of the allocated memory 6.39 GiB is allocated by PyTorch, and 13.65 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "warmup_error": "CUDA out of memory. Tried to allocate 80.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 96.44 MiB is free. Including non-PyTorch memory, this process has 7.23 GiB memory in use. Of the allocated memory 7.11 GiB is allocated by PyTorch, and 13.62 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
     "replicates": [],
     "peak_system_ram_mb": null,
     "peak_gpu_vram_mb": null
@@ -558,12 +721,43 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 9.47,
+    "load_time_s": 16.471,
     "load_error": null,
-    "warmup_error": "CUDA out of memory. Tried to allocate 128.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 78.06 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.75 GiB memory in use. Of the allocated memory 6.45 GiB is allocated by PyTorch, and 206.27 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
-    "replicates": [],
-    "peak_system_ram_mb": null,
-    "peak_gpu_vram_mb": null
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 56.75,
+        "error": null,
+        "image_path": "docs/images/gtx1070/flux_schnell_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 56.607,
+        "error": null,
+        "image_path": "docs/images/gtx1070/flux_schnell_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 56.097,
+        "error": null,
+        "image_path": "docs/images/gtx1070/flux_schnell_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 56.47,
+        "error": null,
+        "image_path": "docs/images/gtx1070/flux_schnell_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 56.788,
+        "error": null,
+        "image_path": "docs/images/gtx1070/flux_schnell_sequential_offload_rep5.png"
+      }
+    ],
+    "peak_system_ram_mb": 87663.9,
+    "peak_gpu_vram_mb": 886.0
   },
   {
     "hardware": "gtx1070",
@@ -576,7 +770,7 @@
     "steps": 30,
     "cached_at_load": false,
     "load_time_s": null,
-    "load_error": "CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 43.75 MiB is free. Process 1559035 has 288.00 MiB memory in use. Including non-PyTorch memory, this process has 6.74 GiB memory in use. Of the allocated memory 6.47 GiB is allocated by PyTorch, and 167.65 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "load_error": "CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 48.50 MiB is free. Including non-PyTorch memory, this process has 7.27 GiB memory in use. Of the allocated memory 7.02 GiB is allocated by PyTorch, and 154.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
     "warmup_error": null,
     "replicates": [],
     "peak_system_ram_mb": null,
@@ -592,31 +786,43 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 4.89,
+    "load_time_s": 9.807,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 24.132,
+        "elapsed_s": 25.195,
         "error": null,
         "image_path": "docs/images/gtx1070/kandinsky_2_2_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 23.92,
+        "elapsed_s": 25.274,
         "error": null,
         "image_path": "docs/images/gtx1070/kandinsky_2_2_model_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 23.893,
+        "elapsed_s": 25.507,
         "error": null,
         "image_path": "docs/images/gtx1070/kandinsky_2_2_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 24.364,
+        "error": null,
+        "image_path": "docs/images/gtx1070/kandinsky_2_2_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 25.231,
+        "error": null,
+        "image_path": "docs/images/gtx1070/kandinsky_2_2_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 64063.3,
-    "peak_gpu_vram_mb": 5499.9
+    "peak_system_ram_mb": 64965.7,
+    "peak_gpu_vram_mb": 5498.0
   },
   {
     "hardware": "gtx1070",
@@ -628,30 +834,124 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 4.658,
+    "load_time_s": 9.593,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 51.101,
+        "elapsed_s": 63.895,
         "error": null,
         "image_path": "docs/images/gtx1070/kandinsky_2_2_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 50.571,
+        "elapsed_s": 63.932,
         "error": null,
         "image_path": "docs/images/gtx1070/kandinsky_2_2_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 50.746,
+        "elapsed_s": 64.831,
         "error": null,
         "image_path": "docs/images/gtx1070/kandinsky_2_2_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 64.345,
+        "error": null,
+        "image_path": "docs/images/gtx1070/kandinsky_2_2_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 63.464,
+        "error": null,
+        "image_path": "docs/images/gtx1070/kandinsky_2_2_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 39788.3,
-    "peak_gpu_vram_mb": 2810.3
+    "peak_system_ram_mb": 40009.6,
+    "peak_gpu_vram_mb": 2811.3
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "PixArt-alpha/PixArt-XL-2-512x512",
+    "model_short": "pixart_512",
+    "mode": "gpu_only",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 20,
+    "cached_at_load": false,
+    "load_time_s": null,
+    "load_error": "CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 64.50 MiB is free. Including non-PyTorch memory, this process has 7.26 GiB memory in use. Of the allocated memory 6.98 GiB is allocated by PyTorch, and 175.31 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "warmup_error": null,
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "PixArt-alpha/PixArt-XL-2-512x512",
+    "model_short": "pixart_512",
+    "mode": "model_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 20,
+    "cached_at_load": true,
+    "load_time_s": 6.499,
+    "load_error": null,
+    "warmup_error": "CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 104.50 MiB is free. Including non-PyTorch memory, this process has 7.22 GiB memory in use. Of the allocated memory 7.10 GiB is allocated by PyTorch, and 13.62 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "PixArt-alpha/PixArt-XL-2-512x512",
+    "model_short": "pixart_512",
+    "mode": "sequential_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 20,
+    "cached_at_load": true,
+    "load_time_s": 6.616,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 37.244,
+        "error": null,
+        "image_path": "docs/images/gtx1070/pixart_512_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 36.457,
+        "error": null,
+        "image_path": "docs/images/gtx1070/pixart_512_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 36.037,
+        "error": null,
+        "image_path": "docs/images/gtx1070/pixart_512_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 35.583,
+        "error": null,
+        "image_path": "docs/images/gtx1070/pixart_512_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 35.416,
+        "error": null,
+        "image_path": "docs/images/gtx1070/pixart_512_sequential_offload_rep5.png"
+      }
+    ],
+    "peak_system_ram_mb": 74588.8,
+    "peak_gpu_vram_mb": 890.5
   }
 ]

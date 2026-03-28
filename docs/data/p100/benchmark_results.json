@@ -9,30 +9,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": false,
-    "load_time_s": 178.945,
+    "load_time_s": 61.453,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 8.571,
+        "elapsed_s": 8.66,
         "error": null,
         "image_path": "docs/images/p100/sd1_4_gpu_only_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 8.567,
+        "elapsed_s": 8.625,
         "error": null,
         "image_path": "docs/images/p100/sd1_4_gpu_only_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 8.567,
+        "elapsed_s": 8.659,
         "error": null,
         "image_path": "docs/images/p100/sd1_4_gpu_only_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 8.631,
+        "error": null,
+        "image_path": "docs/images/p100/sd1_4_gpu_only_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 8.62,
+        "error": null,
+        "image_path": "docs/images/p100/sd1_4_gpu_only_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 3269.7,
+    "peak_system_ram_mb": 3484.1,
     "peak_gpu_vram_mb": 3519.1
   },
   {
@@ -45,30 +57,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 1.992,
+    "load_time_s": 5.392,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 10.511,
+        "elapsed_s": 10.811,
         "error": null,
         "image_path": "docs/images/p100/sd1_4_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 10.413,
+        "elapsed_s": 10.621,
         "error": null,
         "image_path": "docs/images/p100/sd1_4_model_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 10.422,
+        "elapsed_s": 10.734,
         "error": null,
         "image_path": "docs/images/p100/sd1_4_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 10.816,
+        "error": null,
+        "image_path": "docs/images/p100/sd1_4_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 10.753,
+        "error": null,
+        "image_path": "docs/images/p100/sd1_4_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 5505.5,
+    "peak_system_ram_mb": 6530.9,
     "peak_gpu_vram_mb": 2707.8
   },
   {
@@ -81,31 +105,43 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 2.692,
+    "load_time_s": 5.388,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 37.741,
+        "elapsed_s": 42.883,
         "error": null,
         "image_path": "docs/images/p100/sd1_4_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 37.797,
+        "elapsed_s": 43.472,
         "error": null,
         "image_path": "docs/images/p100/sd1_4_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 37.86,
+        "elapsed_s": 41.994,
         "error": null,
         "image_path": "docs/images/p100/sd1_4_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 43.988,
+        "error": null,
+        "image_path": "docs/images/p100/sd1_4_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 43.447,
+        "error": null,
+        "image_path": "docs/images/p100/sd1_4_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 7059.5,
-    "peak_gpu_vram_mb": 1463.6
+    "peak_system_ram_mb": 8013.9,
+    "peak_gpu_vram_mb": 1463.5
   },
   {
     "hardware": "p100",
@@ -117,30 +153,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": false,
-    "load_time_s": 173.437,
+    "load_time_s": 49.779,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 7.795,
+        "elapsed_s": 7.836,
         "error": null,
         "image_path": "docs/images/p100/sd2_1_base_gpu_only_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 7.802,
+        "elapsed_s": 7.853,
         "error": null,
         "image_path": "docs/images/p100/sd2_1_base_gpu_only_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 7.799,
+        "elapsed_s": 7.884,
         "error": null,
         "image_path": "docs/images/p100/sd2_1_base_gpu_only_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 7.889,
+        "error": null,
+        "image_path": "docs/images/p100/sd2_1_base_gpu_only_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 7.874,
+        "error": null,
+        "image_path": "docs/images/p100/sd2_1_base_gpu_only_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 7515.2,
+    "peak_system_ram_mb": 8978.3,
     "peak_gpu_vram_mb": 3361.6
   },
   {
@@ -153,30 +201,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 1.833,
+    "load_time_s": 5.179,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 9.532,
+        "elapsed_s": 9.939,
         "error": null,
         "image_path": "docs/images/p100/sd2_1_base_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 9.448,
+        "elapsed_s": 10.154,
         "error": null,
         "image_path": "docs/images/p100/sd2_1_base_model_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 9.484,
+        "elapsed_s": 10.279,
         "error": null,
         "image_path": "docs/images/p100/sd2_1_base_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 10.027,
+        "error": null,
+        "image_path": "docs/images/p100/sd2_1_base_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 10.061,
+        "error": null,
+        "image_path": "docs/images/p100/sd2_1_base_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 7678.6,
+    "peak_system_ram_mb": 9338.4,
     "peak_gpu_vram_mb": 2138.6
   },
   {
@@ -189,30 +249,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 1.92,
+    "load_time_s": 4.829,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 39.094,
+        "elapsed_s": 47.882,
         "error": null,
         "image_path": "docs/images/p100/sd2_1_base_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 38.18,
+        "elapsed_s": 45.259,
         "error": null,
         "image_path": "docs/images/p100/sd2_1_base_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 38.769,
+        "elapsed_s": 47.749,
         "error": null,
         "image_path": "docs/images/p100/sd2_1_base_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 46.669,
+        "error": null,
+        "image_path": "docs/images/p100/sd2_1_base_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 44.846,
+        "error": null,
+        "image_path": "docs/images/p100/sd2_1_base_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 8979.2,
+    "peak_system_ram_mb": 10659.1,
     "peak_gpu_vram_mb": 882.5
   },
   {
@@ -225,31 +297,43 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": false,
-    "load_time_s": 343.924,
+    "load_time_s": 100.663,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 14.114,
+        "elapsed_s": 14.156,
         "error": null,
         "image_path": "docs/images/p100/sdxl_gpu_only_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 14.116,
+        "elapsed_s": 14.157,
         "error": null,
         "image_path": "docs/images/p100/sdxl_gpu_only_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 14.114,
+        "elapsed_s": 14.166,
         "error": null,
         "image_path": "docs/images/p100/sdxl_gpu_only_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 14.139,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_gpu_only_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 14.122,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_gpu_only_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 12191.0,
-    "peak_gpu_vram_mb": 7663.1
+    "peak_system_ram_mb": 12807.2,
+    "peak_gpu_vram_mb": 7663.6
   },
   {
     "hardware": "p100",
@@ -261,30 +345,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 3.545,
+    "load_time_s": 6.316,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 18.218,
+        "elapsed_s": 18.791,
         "error": null,
         "image_path": "docs/images/p100/sdxl_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 18.238,
+        "elapsed_s": 18.795,
         "error": null,
         "image_path": "docs/images/p100/sdxl_model_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 18.256,
+        "elapsed_s": 18.916,
         "error": null,
         "image_path": "docs/images/p100/sdxl_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 18.884,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 18.863,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 13982.1,
+    "peak_system_ram_mb": 19034.2,
     "peak_gpu_vram_mb": 5472.6
   },
   {
@@ -297,30 +393,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 3.75,
+    "load_time_s": 5.396,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 74.877,
+        "elapsed_s": 80.81,
         "error": null,
         "image_path": "docs/images/p100/sdxl_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 74.523,
+        "elapsed_s": 79.066,
         "error": null,
         "image_path": "docs/images/p100/sdxl_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 78.821,
+        "elapsed_s": 82.2,
         "error": null,
         "image_path": "docs/images/p100/sdxl_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 77.184,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 74.889,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 19071.8,
+    "peak_system_ram_mb": 20203.3,
     "peak_gpu_vram_mb": 777.3
   },
   {
@@ -333,7 +441,7 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": false,
-    "load_time_s": 580.725,
+    "load_time_s": 93.459,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
@@ -345,19 +453,31 @@
       },
       {
         "rep": 2,
-        "elapsed_s": 1.304,
+        "elapsed_s": 1.306,
         "error": null,
         "image_path": "docs/images/p100/sdxl_turbo_gpu_only_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 1.303,
+        "elapsed_s": 1.306,
         "error": null,
         "image_path": "docs/images/p100/sdxl_turbo_gpu_only_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 1.307,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_turbo_gpu_only_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 1.306,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_turbo_gpu_only_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 19570.5,
-    "peak_gpu_vram_mb": 7663.2
+    "peak_system_ram_mb": 20268.0,
+    "peak_gpu_vram_mb": 7662.7
   },
   {
     "hardware": "p100",
@@ -369,30 +489,42 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 3.921,
+    "load_time_s": 4.625,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 5.526,
+        "elapsed_s": 5.616,
         "error": null,
         "image_path": "docs/images/p100/sdxl_turbo_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 5.504,
+        "elapsed_s": 5.597,
         "error": null,
         "image_path": "docs/images/p100/sdxl_turbo_model_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 5.531,
+        "elapsed_s": 5.588,
         "error": null,
         "image_path": "docs/images/p100/sdxl_turbo_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 5.629,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_turbo_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 5.615,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_turbo_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 19589.1,
+    "peak_system_ram_mb": 20423.2,
     "peak_gpu_vram_mb": 5452.2
   },
   {
@@ -405,30 +537,42 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 3.302,
+    "load_time_s": 5.259,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 10.505,
+        "elapsed_s": 10.926,
         "error": null,
         "image_path": "docs/images/p100/sdxl_turbo_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 10.472,
+        "elapsed_s": 10.996,
         "error": null,
         "image_path": "docs/images/p100/sdxl_turbo_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 10.574,
+        "elapsed_s": 10.873,
         "error": null,
         "image_path": "docs/images/p100/sdxl_turbo_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 10.664,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_turbo_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 10.911,
+        "error": null,
+        "image_path": "docs/images/p100/sdxl_turbo_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 20647.8,
+    "peak_system_ram_mb": 22543.4,
     "peak_gpu_vram_mb": 776.6
   },
   {
@@ -458,30 +602,42 @@
     "width": 512,
     "steps": 28,
     "cached_at_load": true,
-    "load_time_s": 5.113,
+    "load_time_s": 6.536,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 41.069,
+        "elapsed_s": 41.322,
         "error": null,
         "image_path": "docs/images/p100/sd3_5_medium_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 41.11,
+        "elapsed_s": 41.545,
         "error": null,
         "image_path": "docs/images/p100/sd3_5_medium_model_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 41.055,
+        "elapsed_s": 41.694,
         "error": null,
         "image_path": "docs/images/p100/sd3_5_medium_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 41.543,
+        "error": null,
+        "image_path": "docs/images/p100/sd3_5_medium_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 41.489,
+        "error": null,
+        "image_path": "docs/images/p100/sd3_5_medium_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 35307.7,
+    "peak_system_ram_mb": 37181.3,
     "peak_gpu_vram_mb": 12352.5
   },
   {
@@ -494,30 +650,42 @@
     "width": 512,
     "steps": 28,
     "cached_at_load": true,
-    "load_time_s": 4.605,
+    "load_time_s": 5.008,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 66.371,
+        "elapsed_s": 67.568,
         "error": null,
         "image_path": "docs/images/p100/sd3_5_medium_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 66.082,
+        "elapsed_s": 67.572,
         "error": null,
         "image_path": "docs/images/p100/sd3_5_medium_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 61.219,
+        "elapsed_s": 67.372,
         "error": null,
         "image_path": "docs/images/p100/sd3_5_medium_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 67.525,
+        "error": null,
+        "image_path": "docs/images/p100/sd3_5_medium_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 67.611,
+        "error": null,
+        "image_path": "docs/images/p100/sd3_5_medium_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 49661.7,
+    "peak_system_ram_mb": 52045.6,
     "peak_gpu_vram_mb": 1323.0
   },
   {
@@ -547,7 +715,7 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 6.351,
+    "load_time_s": 7.042,
     "load_error": null,
     "warmup_error": "CUDA out of memory. Tried to allocate 12.00 MiB. GPU 0 has a total capacity of 15.89 GiB of which 73.62 MiB is free. Including non-PyTorch memory, this process has 15.81 GiB memory in use. Of the allocated memory 15.51 GiB is allocated by PyTorch, and 8.80 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
     "replicates": [],
@@ -564,12 +732,43 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 5.802,
+    "load_time_s": 6.814,
     "load_error": null,
-    "warmup_error": "CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 15.89 GiB of which 219.62 MiB is free. Including non-PyTorch memory, this process has 15.66 GiB memory in use. Of the allocated memory 15.28 GiB is allocated by PyTorch, and 89.51 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
-    "replicates": [],
-    "peak_system_ram_mb": null,
-    "peak_gpu_vram_mb": null
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 34.055,
+        "error": null,
+        "image_path": "docs/images/p100/sd3_5_large_turbo_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 33.528,
+        "error": null,
+        "image_path": "docs/images/p100/sd3_5_large_turbo_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 33.527,
+        "error": null,
+        "image_path": "docs/images/p100/sd3_5_large_turbo_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 33.633,
+        "error": null,
+        "image_path": "docs/images/p100/sd3_5_large_turbo_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 33.574,
+        "error": null,
+        "image_path": "docs/images/p100/sd3_5_large_turbo_sequential_offload_rep5.png"
+      }
+    ],
+    "peak_system_ram_mb": 73805.0,
+    "peak_gpu_vram_mb": 1063.0
   },
   {
     "hardware": "p100",
@@ -598,7 +797,7 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 6.784,
+    "load_time_s": 7.872,
     "load_error": null,
     "warmup_error": "CUDA out of memory. Tried to allocate 72.00 MiB. GPU 0 has a total capacity of 15.89 GiB of which 95.62 MiB is free. Including non-PyTorch memory, this process has 15.79 GiB memory in use. Of the allocated memory 15.49 GiB is allocated by PyTorch, and 2.65 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
     "replicates": [],
@@ -615,12 +814,43 @@
     "width": 512,
     "steps": 4,
     "cached_at_load": true,
-    "load_time_s": 6.207,
+    "load_time_s": 7.552,
     "load_error": null,
-    "warmup_error": "CUDA out of memory. Tried to allocate 252.00 MiB. GPU 0 has a total capacity of 15.89 GiB of which 267.62 MiB is free. Including non-PyTorch memory, this process has 15.62 GiB memory in use. Of the allocated memory 15.32 GiB is allocated by PyTorch, and 6.78 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
-    "replicates": [],
-    "peak_system_ram_mb": null,
-    "peak_gpu_vram_mb": null
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 38.183,
+        "error": null,
+        "image_path": "docs/images/p100/flux_schnell_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 38.189,
+        "error": null,
+        "image_path": "docs/images/p100/flux_schnell_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 37.93,
+        "error": null,
+        "image_path": "docs/images/p100/flux_schnell_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 38.074,
+        "error": null,
+        "image_path": "docs/images/p100/flux_schnell_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 38.183,
+        "error": null,
+        "image_path": "docs/images/p100/flux_schnell_sequential_offload_rep5.png"
+      }
+    ],
+    "peak_system_ram_mb": 89684.5,
+    "peak_gpu_vram_mb": 886.0
   },
   {
     "hardware": "p100",
@@ -632,30 +862,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": false,
-    "load_time_s": 552.782,
+    "load_time_s": 193.579,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 8.524,
+        "elapsed_s": 8.547,
         "error": null,
         "image_path": "docs/images/p100/kandinsky_2_2_gpu_only_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 8.524,
+        "elapsed_s": 8.546,
         "error": null,
         "image_path": "docs/images/p100/kandinsky_2_2_gpu_only_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 8.518,
+        "elapsed_s": 8.551,
         "error": null,
         "image_path": "docs/images/p100/kandinsky_2_2_gpu_only_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 8.54,
+        "error": null,
+        "image_path": "docs/images/p100/kandinsky_2_2_gpu_only_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 8.542,
+        "error": null,
+        "image_path": "docs/images/p100/kandinsky_2_2_gpu_only_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 55521.2,
+    "peak_system_ram_mb": 60927.7,
     "peak_gpu_vram_mb": 10238.4
   },
   {
@@ -668,30 +910,42 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 4.523,
+    "load_time_s": 4.588,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 15.122,
+        "elapsed_s": 15.465,
         "error": null,
         "image_path": "docs/images/p100/kandinsky_2_2_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 14.772,
+        "elapsed_s": 15.513,
         "error": null,
         "image_path": "docs/images/p100/kandinsky_2_2_model_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 14.76,
+        "elapsed_s": 15.54,
         "error": null,
         "image_path": "docs/images/p100/kandinsky_2_2_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 15.501,
+        "error": null,
+        "image_path": "docs/images/p100/kandinsky_2_2_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 15.49,
+        "error": null,
+        "image_path": "docs/images/p100/kandinsky_2_2_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 30286.4,
+    "peak_system_ram_mb": 37012.4,
     "peak_gpu_vram_mb": 5498.0
   },
   {
@@ -704,31 +958,43 @@
     "width": 512,
     "steps": 30,
     "cached_at_load": true,
-    "load_time_s": 4.615,
+    "load_time_s": 4.633,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 44.806,
+        "elapsed_s": 50.644,
         "error": null,
         "image_path": "docs/images/p100/kandinsky_2_2_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 45.224,
+        "elapsed_s": 50.456,
         "error": null,
         "image_path": "docs/images/p100/kandinsky_2_2_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 44.771,
+        "elapsed_s": 50.319,
         "error": null,
         "image_path": "docs/images/p100/kandinsky_2_2_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 50.316,
+        "error": null,
+        "image_path": "docs/images/p100/kandinsky_2_2_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 50.388,
+        "error": null,
+        "image_path": "docs/images/p100/kandinsky_2_2_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 34654.3,
-    "peak_gpu_vram_mb": 2810.3
+    "peak_system_ram_mb": 41435.9,
+    "peak_gpu_vram_mb": 2811.3
   },
   {
     "hardware": "p100",
@@ -740,31 +1006,43 @@
     "width": 512,
     "steps": 20,
     "cached_at_load": false,
-    "load_time_s": 409.975,
+    "load_time_s": 105.69,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 9.034,
+        "elapsed_s": 9.044,
         "error": null,
         "image_path": "docs/images/p100/pixart_512_gpu_only_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 9.03,
+        "elapsed_s": 9.035,
         "error": null,
         "image_path": "docs/images/p100/pixart_512_gpu_only_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 9.032,
+        "elapsed_s": 9.036,
         "error": null,
         "image_path": "docs/images/p100/pixart_512_gpu_only_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 9.034,
+        "error": null,
+        "image_path": "docs/images/p100/pixart_512_gpu_only_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 9.036,
+        "error": null,
+        "image_path": "docs/images/p100/pixart_512_gpu_only_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 33361.9,
-    "peak_gpu_vram_mb": 13223.0
+    "peak_system_ram_mb": 40190.5,
+    "peak_gpu_vram_mb": 13221.3
   },
   {
     "hardware": "p100",
@@ -776,30 +1054,42 @@
     "width": 512,
     "steps": 20,
     "cached_at_load": true,
-    "load_time_s": 2.644,
+    "load_time_s": 3.724,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 21.188,
+        "elapsed_s": 21.82,
         "error": null,
         "image_path": "docs/images/p100/pixart_512_model_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 21.458,
+        "elapsed_s": 21.626,
         "error": null,
         "image_path": "docs/images/p100/pixart_512_model_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 21.243,
+        "elapsed_s": 21.634,
         "error": null,
         "image_path": "docs/images/p100/pixart_512_model_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 21.638,
+        "error": null,
+        "image_path": "docs/images/p100/pixart_512_model_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 21.872,
+        "error": null,
+        "image_path": "docs/images/p100/pixart_512_model_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 38840.3,
+    "peak_system_ram_mb": 45759.4,
     "peak_gpu_vram_mb": 11034.9
   },
   {
@@ -812,30 +1102,42 @@
     "width": 512,
     "steps": 20,
     "cached_at_load": true,
-    "load_time_s": 3.854,
+    "load_time_s": 2.482,
     "load_error": null,
     "warmup_error": null,
     "replicates": [
       {
         "rep": 1,
-        "elapsed_s": 22.948,
+        "elapsed_s": 25.846,
         "error": null,
         "image_path": "docs/images/p100/pixart_512_sequential_offload_rep1.png"
       },
       {
         "rep": 2,
-        "elapsed_s": 22.357,
+        "elapsed_s": 25.379,
         "error": null,
         "image_path": "docs/images/p100/pixart_512_sequential_offload_rep2.png"
       },
       {
         "rep": 3,
-        "elapsed_s": 21.816,
+        "elapsed_s": 24.631,
         "error": null,
         "image_path": "docs/images/p100/pixart_512_sequential_offload_rep3.png"
+      },
+      {
+        "rep": 4,
+        "elapsed_s": 24.302,
+        "error": null,
+        "image_path": "docs/images/p100/pixart_512_sequential_offload_rep4.png"
+      },
+      {
+        "rep": 5,
+        "elapsed_s": 24.254,
+        "error": null,
+        "image_path": "docs/images/p100/pixart_512_sequential_offload_rep5.png"
       }
     ],
-    "peak_system_ram_mb": 64138.7,
+    "peak_system_ram_mb": 70844.6,
     "peak_gpu_vram_mb": 890.5
   }
 ]

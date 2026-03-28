@@ -83,7 +83,7 @@ PROMPT = 'a turtle and a bird together in a forest'
 
 HEIGHT = 512
 WIDTH = 512
-REPLICATES = 3          # Timed runs per (model, mode) combination
+REPLICATES = 5          # Timed runs per (model, mode) combination
 WARMUP_RUNS = 1         # Untimed runs before timing starts
 
 # Model registry: model_id -> (pipeline_class_name, num_inference_steps, short_name)
@@ -184,11 +184,22 @@ def _run_inference(pipe, steps: int, extra_kwargs: dict) -> tuple[object, float]
 def _cleanup(pipe) -> None:
     '''Release GPU and CPU memory held by *pipe*.'''
 
+    if pipe is not None:
+        # Move all submodules to CPU before deleting so the CUDA allocator
+        # actually releases the memory rather than caching it for reuse.
+        try:
+            pipe.to('cpu')
+        except Exception:
+            pass
+
     del pipe
     gc.collect()
 
     if torch.cuda.is_available():
+        torch.cuda.synchronize()
         torch.cuda.empty_cache()
+
+    time.sleep(2)  # Give the GC and CUDA allocator time to settle
 
 
 # ---------------------------------------------------------------------------

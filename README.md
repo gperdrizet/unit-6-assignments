@@ -51,7 +51,7 @@ Nine models spanning SD 1.x through modern flow-matching architectures are teste
 | `kandinsky-community/kandinsky-2-2-decoder` | 30 |
 | `PixArt-alpha/PixArt-XL-2-512x512` | 20 |
 
-Each (model, mode) pair is run for 3 timed replicates at 512×512 output resolution on the prompt `"a turtle and a bird together in a forest"`. See the full results, per-hardware breakdowns, and generated images on the [GitHub Pages site](https://gperdrizet.github.io/unit-6-assignments).
+Each (model, mode) pair is run for 5 timed replicates at 512×512 output resolution on the prompt `"a turtle and a bird together in a forest"`. See the full results, per-hardware breakdowns, and generated images on the [GitHub Pages site](https://gperdrizet.github.io/unit-6-assignments).
 
 To run the benchmark yourself:
 

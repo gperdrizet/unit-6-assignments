@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Generation Benchmark</title>
+  <title>Image generation benchmark</title>
   <style>
     body { font-family: system-ui, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; color: #222; }
     h1 { border-bottom: 2px solid #ddd; padding-bottom: .5rem; }
@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<h1>Image Generation Benchmark</h1>
+<h1>Image generation benchmark</h1>
 
 <p>
   This benchmark compares generation latency, peak GPU VRAM, and peak system RAM
@@ -26,7 +26,7 @@
 </p>
 
 <p><strong>Prompt:</strong> <em>"a turtle and a bird together in a forest"</em></p>
-<p><strong>Output resolution:</strong> 512 × 512 &nbsp;|&nbsp; <strong>Replicates:</strong> 3 timed runs per combination</p>
+<p><strong>Output resolution:</strong> 512 × 512 &nbsp;|&nbsp; <strong>Replicates:</strong> 5 timed runs per combination</p>
 
 <h2>Hardware</h2>
 
@@ -79,8 +79,8 @@
   </thead>
   <tbody>
     <tr><td><code>gpu_only</code></td><td>Full model loaded to GPU VRAM in fp16</td></tr>
-    <tr><td><code>model_offload</code></td><td><code>enable_model_cpu_offload()</code> — submodels paged to GPU one at a time</td></tr>
-    <tr><td><code>sequential_offload</code></td><td><code>enable_sequential_cpu_offload()</code> — individual layers moved layer-by-layer</td></tr>
+    <tr><td><code>model_offload</code></td><td><code>enable_model_cpu_offload()</code>, submodels paged to GPU one at a time</td></tr>
+    <tr><td><code>sequential_offload</code></td><td><code>enable_sequential_cpu_offload()</code>, individual layers moved layer-by-layer</td></tr>
   </tbody>
 </table>
 
