@@ -56,18 +56,18 @@
 
 <table>
   <thead>
-    <tr><th>Model</th><th>Generation</th><th>Architecture</th><th>Gated</th><th>Steps</th></tr>
+    <tr><th>Model</th><th>Generation</th><th>Architecture</th><th>Gated</th><th>Steps</th><th>Paper</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="https://huggingface.co/CompVis/stable-diffusion-v1-4">CompVis/stable-diffusion-v1-4</a></td><td>SD 1.x</td><td>UNet + CLIP</td><td>No</td><td>30</td></tr>
-    <tr><td><a href="https://huggingface.co/sd2-community/stable-diffusion-2-1-base">sd2-community/stable-diffusion-2-1-base</a></td><td>SD 2.x</td><td>UNet + OpenCLIP</td><td>No</td><td>30</td></tr>
-    <tr><td><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">stabilityai/stable-diffusion-xl-base-1.0</a></td><td>SDXL</td><td>UNet (2×) + dual encoders</td><td>No</td><td>30</td></tr>
-    <tr><td><a href="https://huggingface.co/stabilityai/sdxl-turbo">stabilityai/sdxl-turbo</a></td><td>SDXL (distilled)</td><td>UNet (2×) + dual encoders</td><td>No</td><td>4</td></tr>
-    <tr><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-medium">stabilityai/stable-diffusion-3.5-medium</a></td><td>SD 3.5</td><td>DiT (MMDiT) + T5</td><td>Yes</td><td>28</td></tr>
-    <tr><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo">stabilityai/stable-diffusion-3.5-large-turbo</a></td><td>SD 3.5 (distilled)</td><td>DiT (MMDiT) + T5</td><td>Yes</td><td>4</td></tr>
-    <tr><td><a href="https://huggingface.co/black-forest-labs/FLUX.1-schnell">black-forest-labs/FLUX.1-schnell</a></td><td>FLUX</td><td>Flow matching + T5</td><td>Yes</td><td>4</td></tr>
-    <tr><td><a href="https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder">kandinsky-community/kandinsky-2-2-decoder</a></td><td>Kandinsky 2.2</td><td>Two-stage prior + UNet</td><td>No</td><td>30</td></tr>
-    <tr><td><a href="https://huggingface.co/PixArt-alpha/PixArt-XL-2-512x512">PixArt-alpha/PixArt-XL-2-512x512</a></td><td>PixArt</td><td>DiT + T5</td><td>No</td><td>20</td></tr>
+    <tr><td><a href="https://huggingface.co/CompVis/stable-diffusion-v1-4">CompVis/stable-diffusion-v1-4</a></td><td>SD 1.x</td><td>UNet + CLIP</td><td>No</td><td>30</td><td><a href="https://arxiv.org/abs/2112.10752">arXiv:2112.10752</a></td></tr>
+    <tr><td><a href="https://huggingface.co/sd2-community/stable-diffusion-2-1-base">sd2-community/stable-diffusion-2-1-base</a></td><td>SD 2.x</td><td>UNet + OpenCLIP</td><td>No</td><td>30</td><td><a href="https://arxiv.org/abs/2112.10752">arXiv:2112.10752</a></td></tr>
+    <tr><td><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">stabilityai/stable-diffusion-xl-base-1.0</a></td><td>SDXL</td><td>UNet (2×) + dual encoders</td><td>No</td><td>30</td><td><a href="https://arxiv.org/abs/2307.01952">arXiv:2307.01952</a></td></tr>
+    <tr><td><a href="https://huggingface.co/stabilityai/sdxl-turbo">stabilityai/sdxl-turbo</a></td><td>SDXL (distilled)</td><td>UNet (2×) + dual encoders</td><td>No</td><td>4</td><td><a href="https://arxiv.org/abs/2311.17042">arXiv:2311.17042</a></td></tr>
+    <tr><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-medium">stabilityai/stable-diffusion-3.5-medium</a></td><td>SD 3.5</td><td>DiT (MMDiT) + T5</td><td>Yes</td><td>28</td><td><a href="https://arxiv.org/abs/2403.03206">arXiv:2403.03206</a></td></tr>
+    <tr><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo">stabilityai/stable-diffusion-3.5-large-turbo</a></td><td>SD 3.5 (distilled)</td><td>DiT (MMDiT) + T5</td><td>Yes</td><td>4</td><td><a href="https://arxiv.org/abs/2403.03206">arXiv:2403.03206</a></td></tr>
+    <tr><td><a href="https://huggingface.co/black-forest-labs/FLUX.1-schnell">black-forest-labs/FLUX.1-schnell</a></td><td>FLUX</td><td>Flow matching + T5</td><td>Yes</td><td>4</td><td><a href="https://github.com/black-forest-labs/flux">GitHub</a></td></tr>
+    <tr><td><a href="https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder">kandinsky-community/kandinsky-2-2-decoder</a></td><td>Kandinsky 2.2</td><td>Two-stage prior + UNet</td><td>No</td><td>30</td><td><a href="https://arxiv.org/abs/2310.03502">arXiv:2310.03502</a></td></tr>
+    <tr><td><a href="https://huggingface.co/PixArt-alpha/PixArt-XL-2-512x512">PixArt-alpha/PixArt-XL-2-512x512</a></td><td>PixArt</td><td>DiT + T5</td><td>No</td><td>20</td><td><a href="https://arxiv.org/abs/2310.00426">arXiv:2310.00426</a></td></tr>
   </tbody>
 </table>
 
@@ -81,7 +81,6 @@
     <tr><td><code>gpu_only</code></td><td>Full model loaded to GPU VRAM in fp16</td></tr>
     <tr><td><code>model_offload</code></td><td><code>enable_model_cpu_offload()</code> — submodels paged to GPU one at a time</td></tr>
     <tr><td><code>sequential_offload</code></td><td><code>enable_sequential_cpu_offload()</code> — individual layers moved layer-by-layer</td></tr>
-    <tr><td><code>cpu_only</code></td><td>Full model on CPU in fp32, no GPU used</td></tr>
   </tbody>
 </table>
 

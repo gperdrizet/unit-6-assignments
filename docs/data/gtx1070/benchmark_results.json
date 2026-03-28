@@ -106,5 +106,552 @@
     ],
     "peak_system_ram_mb": 7151.1,
     "peak_gpu_vram_mb": 1463.6
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "sd2-community/stable-diffusion-2-1-base",
+    "model_short": "sd2_1_base",
+    "mode": "gpu_only",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": false,
+    "load_time_s": 55.934,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 15.475,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_gpu_only_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 15.474,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_gpu_only_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 15.455,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_gpu_only_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 3039.5,
+    "peak_gpu_vram_mb": 3359.6
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "sd2-community/stable-diffusion-2-1-base",
+    "model_short": "sd2_1_base",
+    "mode": "model_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": true,
+    "load_time_s": 2.366,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 17.019,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_model_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 17.24,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_model_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 17.344,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_model_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 5336.9,
+    "peak_gpu_vram_mb": 2138.6
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "sd2-community/stable-diffusion-2-1-base",
+    "model_short": "sd2_1_base",
+    "mode": "sequential_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": true,
+    "load_time_s": 4.408,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 41.25,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 40.385,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 41.009,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd2_1_base_sequential_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 7027.2,
+    "peak_gpu_vram_mb": 882.5
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/stable-diffusion-xl-base-1.0",
+    "model_short": "sdxl",
+    "mode": "gpu_only",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": false,
+    "load_time_s": null,
+    "load_error": "CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 51.50 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.59 GiB memory in use. Of the allocated memory 6.23 GiB is allocated by PyTorch, and 260.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "warmup_error": null,
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/stable-diffusion-xl-base-1.0",
+    "model_short": "sdxl",
+    "mode": "model_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": true,
+    "load_time_s": 8.309,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 32.027,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_model_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 32.022,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_model_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 31.916,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_model_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 15373.1,
+    "peak_gpu_vram_mb": 5470.9
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/stable-diffusion-xl-base-1.0",
+    "model_short": "sdxl",
+    "mode": "sequential_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": true,
+    "load_time_s": 4.245,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 79.391,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 79.261,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 79.537,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_sequential_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 18805.3,
+    "peak_gpu_vram_mb": 777.3
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/sdxl-turbo",
+    "model_short": "sdxl_turbo",
+    "mode": "gpu_only",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 4,
+    "cached_at_load": false,
+    "load_time_s": null,
+    "load_error": "CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 46.69 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.61 GiB memory in use. Of the allocated memory 6.25 GiB is allocated by PyTorch, and 264.96 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "warmup_error": null,
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/sdxl-turbo",
+    "model_short": "sdxl_turbo",
+    "mode": "model_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 4,
+    "cached_at_load": true,
+    "load_time_s": 3.736,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 6.529,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_turbo_model_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 6.435,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_turbo_model_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 6.398,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_turbo_model_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 20950.5,
+    "peak_gpu_vram_mb": 5450.5
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/sdxl-turbo",
+    "model_short": "sdxl_turbo",
+    "mode": "sequential_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 4,
+    "cached_at_load": true,
+    "load_time_s": 3.695,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 10.267,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_turbo_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 10.275,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_turbo_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 10.45,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sdxl_turbo_sequential_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 20806.2,
+    "peak_gpu_vram_mb": 776.6
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/stable-diffusion-3.5-medium",
+    "model_short": "sd3_5_medium",
+    "mode": "gpu_only",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 28,
+    "cached_at_load": false,
+    "load_time_s": null,
+    "load_error": "CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 156.94 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.66 GiB memory in use. Of the allocated memory 6.44 GiB is allocated by PyTorch, and 113.65 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "warmup_error": null,
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/stable-diffusion-3.5-medium",
+    "model_short": "sd3_5_medium",
+    "mode": "model_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 28,
+    "cached_at_load": true,
+    "load_time_s": 4.889,
+    "load_error": null,
+    "warmup_error": "CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 49.06 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.78 GiB memory in use. Of the allocated memory 6.66 GiB is allocated by PyTorch, and 13.04 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/stable-diffusion-3.5-medium",
+    "model_short": "sd3_5_medium",
+    "mode": "sequential_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 28,
+    "cached_at_load": true,
+    "load_time_s": null,
+    "load_error": "CUDA out of memory. Tried to allocate 432.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 49.06 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.78 GiB memory in use. Of the allocated memory 6.66 GiB is allocated by PyTorch, and 13.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "warmup_error": null,
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/stable-diffusion-3.5-large-turbo",
+    "model_short": "sd3_5_large_turbo",
+    "mode": "gpu_only",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 4,
+    "cached_at_load": false,
+    "load_time_s": null,
+    "load_error": "CUDA out of memory. Tried to allocate 74.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 67.75 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.78 GiB memory in use. Of the allocated memory 6.66 GiB is allocated by PyTorch, and 13.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "warmup_error": null,
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/stable-diffusion-3.5-large-turbo",
+    "model_short": "sd3_5_large_turbo",
+    "mode": "model_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 4,
+    "cached_at_load": true,
+    "load_time_s": 6.137,
+    "load_error": null,
+    "warmup_error": "CUDA out of memory. Tried to allocate 74.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 65.81 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.78 GiB memory in use. Of the allocated memory 6.66 GiB is allocated by PyTorch, and 13.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "stabilityai/stable-diffusion-3.5-large-turbo",
+    "model_short": "sd3_5_large_turbo",
+    "mode": "sequential_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 4,
+    "cached_at_load": true,
+    "load_time_s": 6.842,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 42.81,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd3_5_large_turbo_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 42.716,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd3_5_large_turbo_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 43.455,
+        "error": null,
+        "image_path": "docs/images/gtx1070/sd3_5_large_turbo_sequential_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 66127.4,
+    "peak_gpu_vram_mb": 1062.3
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "black-forest-labs/FLUX.1-schnell",
+    "model_short": "flux_schnell",
+    "mode": "gpu_only",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 4,
+    "cached_at_load": false,
+    "load_time_s": null,
+    "load_error": "CUDA out of memory. Tried to allocate 80.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 107.81 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.58 GiB memory in use. Of the allocated memory 6.47 GiB is allocated by PyTorch, and 7.69 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "warmup_error": null,
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "black-forest-labs/FLUX.1-schnell",
+    "model_short": "flux_schnell",
+    "mode": "model_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 4,
+    "cached_at_load": true,
+    "load_time_s": 7.944,
+    "load_error": null,
+    "warmup_error": "CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 183.06 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.51 GiB memory in use. Of the allocated memory 6.39 GiB is allocated by PyTorch, and 13.65 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "black-forest-labs/FLUX.1-schnell",
+    "model_short": "flux_schnell",
+    "mode": "sequential_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 4,
+    "cached_at_load": true,
+    "load_time_s": 9.47,
+    "load_error": null,
+    "warmup_error": "CUDA out of memory. Tried to allocate 128.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 78.06 MiB is free. Process 1559035 has 262.00 MiB memory in use. Including non-PyTorch memory, this process has 6.75 GiB memory in use. Of the allocated memory 6.45 GiB is allocated by PyTorch, and 206.27 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "kandinsky-community/kandinsky-2-2-decoder",
+    "model_short": "kandinsky_2_2",
+    "mode": "gpu_only",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": false,
+    "load_time_s": null,
+    "load_error": "CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 43.75 MiB is free. Process 1559035 has 288.00 MiB memory in use. Including non-PyTorch memory, this process has 6.74 GiB memory in use. Of the allocated memory 6.47 GiB is allocated by PyTorch, and 167.65 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+    "warmup_error": null,
+    "replicates": [],
+    "peak_system_ram_mb": null,
+    "peak_gpu_vram_mb": null
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "kandinsky-community/kandinsky-2-2-decoder",
+    "model_short": "kandinsky_2_2",
+    "mode": "model_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": true,
+    "load_time_s": 4.89,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 24.132,
+        "error": null,
+        "image_path": "docs/images/gtx1070/kandinsky_2_2_model_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 23.92,
+        "error": null,
+        "image_path": "docs/images/gtx1070/kandinsky_2_2_model_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 23.893,
+        "error": null,
+        "image_path": "docs/images/gtx1070/kandinsky_2_2_model_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 64063.3,
+    "peak_gpu_vram_mb": 5499.9
+  },
+  {
+    "hardware": "gtx1070",
+    "model_id": "kandinsky-community/kandinsky-2-2-decoder",
+    "model_short": "kandinsky_2_2",
+    "mode": "sequential_offload",
+    "prompt": "a turtle and a bird together in a forest",
+    "height": 512,
+    "width": 512,
+    "steps": 30,
+    "cached_at_load": true,
+    "load_time_s": 4.658,
+    "load_error": null,
+    "warmup_error": null,
+    "replicates": [
+      {
+        "rep": 1,
+        "elapsed_s": 51.101,
+        "error": null,
+        "image_path": "docs/images/gtx1070/kandinsky_2_2_sequential_offload_rep1.png"
+      },
+      {
+        "rep": 2,
+        "elapsed_s": 50.571,
+        "error": null,
+        "image_path": "docs/images/gtx1070/kandinsky_2_2_sequential_offload_rep2.png"
+      },
+      {
+        "rep": 3,
+        "elapsed_s": 50.746,
+        "error": null,
+        "image_path": "docs/images/gtx1070/kandinsky_2_2_sequential_offload_rep3.png"
+      }
+    ],
+    "peak_system_ram_mb": 39788.3,
+    "peak_gpu_vram_mb": 2810.3
   }
 ]

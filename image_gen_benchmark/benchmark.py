@@ -1,5 +1,5 @@
 '''
-Image-generation benchmark — compares model latency and memory usage across
+Image-generation benchmark - compares model latency and memory usage across
 diffusion models and execution modes on a single GPU.
 
 Results are written to:
@@ -105,7 +105,7 @@ MODELS: dict[str, tuple] = {
 }
 
 # Execution modes to test per model
-MODES = ['gpu_only', 'model_offload', 'sequential_offload', 'cpu_only']
+MODES = ['gpu_only', 'model_offload', 'sequential_offload']
 
 # Paths — computed at runtime once the --hardware label is known
 # (see run_benchmark())
@@ -140,10 +140,9 @@ def _load_pipeline(
     gpu_only           - fp16, .to('cuda'), no offload
     model_offload      - fp16, enable_model_cpu_offload()
     sequential_offload - fp16, enable_sequential_cpu_offload()
-    cpu_only           - fp32, .to('cpu')
     '''
 
-    dtype = torch.float32 if mode == 'cpu_only' else torch.float16
+    dtype = torch.float16
 
     pipeline_cls = _import_pipeline_class(pipeline_class_name)
 
@@ -160,9 +159,6 @@ def _load_pipeline(
 
     elif mode == 'sequential_offload':
         pipe.enable_sequential_cpu_offload()
-
-    else:  # cpu_only
-        pipe = pipe.to('cpu')
 
     return pipe
 

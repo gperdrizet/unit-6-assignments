@@ -7,11 +7,18 @@
   <style>
     body { font-family: system-ui, sans-serif; max-width: 1100px; margin: 2rem auto; padding: 0 1rem; color: #222; }
     h1 { border-bottom: 2px solid #ddd; padding-bottom: .5rem; }
-    h2 { margin-top: 2rem; }
+    h2 { margin-top: 2.5rem; }
+    h3 { margin-top: 1.5rem; margin-bottom: .5rem; color: #444; }
     table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .9rem; }
     th, td { border: 1px solid #ccc; padding: .4rem .65rem; text-align: left; }
     th { background: #f5f5f5; }
-    .oom { color: #c00; }
+    td.model-cell { font-weight: 600; background: #fafafa; }
+    .oom { color: #c00; font-weight: 600; }
+    .oom-box { width: 150px; height: 150px; background: #f8f8f8; border: 1px solid #ddd; display: flex; align-items: center; justify-content: center; color: #c00; font-weight: 600; font-size: 1.1rem; }
+    .gallery-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+    .gallery-item { text-align: center; font-size: .8rem; color: #555; }
+    .gallery-item img { width: 150px; height: 150px; object-fit: cover; border: 1px solid #ddd; display: block; }
+    .gallery-item p { margin: .25rem 0 0; }
     .note { color: #888; font-style: italic; }
     nav { margin-bottom: 1.5rem; }
   </style>
@@ -20,27 +27,105 @@
 
 <nav><a href="../">← Back to overview</a></nav>
 
-<h1>Tesla P100-PCIE — Benchmark Results</h1>
+<h1>P100 — Benchmark Results</h1>
 <p><strong>GPU:</strong> Tesla P100-PCIE &nbsp;|&nbsp; <strong>VRAM:</strong> 16 GB &nbsp;|&nbsp; <strong>Architecture:</strong> Pascal (sm_60)</p>
-<p><strong>Prompt:</strong> <em>"a turtle and a bird together in a forest"</em> &nbsp;|&nbsp; <strong>Resolution:</strong> 512 × 512</p>
+<p><strong>Prompt:</strong> <em>"a turtle and a bird together in a forest"</em> &nbsp;|&nbsp; <strong>Resolution:</strong> 512 × 512 &nbsp;|&nbsp; <strong>Replicates:</strong> 3 timed runs</p>
 
-<!-- =========================================================
-     RESULTS TABLES
-     Fill in after running:
-       python image_gen_benchmark/benchmark.py --hardware p100
-     ========================================================= -->
+<h2>Results</h2>
+<p class="note">Generation time is the median of 3 timed replicates (seconds). VRAM and RAM are peak values in MB. OOM = out of memory during load or inference.</p>
 
-<h2>Generation time (seconds, median of 3 replicates)</h2>
-<p class="note">TODO — populate after benchmark run.</p>
-
-<h2>Peak GPU VRAM (MB)</h2>
-<p class="note">TODO — populate after benchmark run.</p>
-
-<h2>Peak system RAM (MB)</h2>
-<p class="note">TODO — populate after benchmark run.</p>
+<table>
+  <thead>
+    <tr><th>Model</th><th>Mode</th><th>Gen time (s)</th><th>Peak GPU VRAM (MB)</th><th>Peak system RAM (MB)</th></tr>
+  </thead>
+  <tbody>
+  <tr><td class="model-cell">SD 1.4</td><td>GPU only</td><td>8.6</td><td>3,519</td><td>3,270</td></tr>
+  <tr><td class="model-cell"></td><td>Model offload</td><td>10.4</td><td>2,708</td><td>5,506</td></tr>
+  <tr><td class="model-cell"></td><td>Sequential offload</td><td>37.8</td><td>1,464</td><td>7,060</td></tr>
+  <tr><td class="model-cell">SD 2.1 Base</td><td>GPU only</td><td>7.8</td><td>3,362</td><td>7,515</td></tr>
+  <tr><td class="model-cell"></td><td>Model offload</td><td>9.5</td><td>2,139</td><td>7,679</td></tr>
+  <tr><td class="model-cell"></td><td>Sequential offload</td><td>38.8</td><td>882</td><td>8,979</td></tr>
+  <tr><td class="model-cell">SDXL</td><td>GPU only</td><td>14.1</td><td>7,663</td><td>12,191</td></tr>
+  <tr><td class="model-cell"></td><td>Model offload</td><td>18.2</td><td>5,473</td><td>13,982</td></tr>
+  <tr><td class="model-cell"></td><td>Sequential offload</td><td>74.9</td><td>777</td><td>19,072</td></tr>
+  <tr><td class="model-cell">SDXL Turbo</td><td>GPU only</td><td>1.3</td><td>7,663</td><td>19,570</td></tr>
+  <tr><td class="model-cell"></td><td>Model offload</td><td>5.5</td><td>5,452</td><td>19,589</td></tr>
+  <tr><td class="model-cell"></td><td>Sequential offload</td><td>10.5</td><td>777</td><td>20,648</td></tr>
+  <tr><td class="model-cell">SD 3.5 Medium</td><td>GPU only</td><td><span class="oom">OOM</span></td><td><span class="oom">OOM</span></td><td>—</td></tr>
+  <tr><td class="model-cell"></td><td>Model offload</td><td>41.1</td><td>12,352</td><td>35,308</td></tr>
+  <tr><td class="model-cell"></td><td>Sequential offload</td><td>66.1</td><td>1,323</td><td>49,662</td></tr>
+  <tr><td class="model-cell">SD 3.5 Large Turbo</td><td>GPU only</td><td><span class="oom">OOM</span></td><td><span class="oom">OOM</span></td><td>—</td></tr>
+  <tr><td class="model-cell"></td><td>Model offload</td><td><span class="oom">OOM</span></td><td><span class="oom">OOM</span></td><td>—</td></tr>
+  <tr><td class="model-cell"></td><td>Sequential offload</td><td><span class="oom">OOM</span></td><td><span class="oom">OOM</span></td><td>—</td></tr>
+  <tr><td class="model-cell">FLUX.1 Schnell</td><td>GPU only</td><td><span class="oom">OOM</span></td><td><span class="oom">OOM</span></td><td>—</td></tr>
+  <tr><td class="model-cell"></td><td>Model offload</td><td><span class="oom">OOM</span></td><td><span class="oom">OOM</span></td><td>—</td></tr>
+  <tr><td class="model-cell"></td><td>Sequential offload</td><td><span class="oom">OOM</span></td><td><span class="oom">OOM</span></td><td>—</td></tr>
+  <tr><td class="model-cell">Kandinsky 2.2</td><td>GPU only</td><td>8.5</td><td>10,238</td><td>55,521</td></tr>
+  <tr><td class="model-cell"></td><td>Model offload</td><td>14.8</td><td>5,498</td><td>30,286</td></tr>
+  <tr><td class="model-cell"></td><td>Sequential offload</td><td>44.8</td><td>2,810</td><td>34,654</td></tr>
+  <tr><td class="model-cell">PixArt XL 512</td><td>GPU only</td><td>9.0</td><td>13,223</td><td>33,362</td></tr>
+  <tr><td class="model-cell"></td><td>Model offload</td><td>21.2</td><td>11,035</td><td>38,840</td></tr>
+  <tr><td class="model-cell"></td><td>Sequential offload</td><td>22.4</td><td>890</td><td>64,139</td></tr>
+  </tbody>
+</table>
 
 <h2>Image gallery</h2>
-<p class="note">TODO — populate after benchmark run.</p>
+<p class="note">One image per (model, mode) combination (replicate 1). Click to view full size.</p>
+
+<h3>SD 1.4</h3>
+<div class="gallery-row">
+  <div class="gallery-item"><a href="../images/p100/sd1_4_gpu_only_rep1.png" target="_blank"><img src="../images/p100/sd1_4_gpu_only_rep1.png" alt="SD 1.4 GPU only"></a><p>GPU only</p></div>
+  <div class="gallery-item"><a href="../images/p100/sd1_4_model_offload_rep1.png" target="_blank"><img src="../images/p100/sd1_4_model_offload_rep1.png" alt="SD 1.4 Model offload"></a><p>Model offload</p></div>
+  <div class="gallery-item"><a href="../images/p100/sd1_4_sequential_offload_rep1.png" target="_blank"><img src="../images/p100/sd1_4_sequential_offload_rep1.png" alt="SD 1.4 Sequential offload"></a><p>Sequential offload</p></div>
+</div>
+<h3>SD 2.1 Base</h3>
+<div class="gallery-row">
+  <div class="gallery-item"><a href="../images/p100/sd2_1_base_gpu_only_rep1.png" target="_blank"><img src="../images/p100/sd2_1_base_gpu_only_rep1.png" alt="SD 2.1 Base GPU only"></a><p>GPU only</p></div>
+  <div class="gallery-item"><a href="../images/p100/sd2_1_base_model_offload_rep1.png" target="_blank"><img src="../images/p100/sd2_1_base_model_offload_rep1.png" alt="SD 2.1 Base Model offload"></a><p>Model offload</p></div>
+  <div class="gallery-item"><a href="../images/p100/sd2_1_base_sequential_offload_rep1.png" target="_blank"><img src="../images/p100/sd2_1_base_sequential_offload_rep1.png" alt="SD 2.1 Base Sequential offload"></a><p>Sequential offload</p></div>
+</div>
+<h3>SDXL</h3>
+<div class="gallery-row">
+  <div class="gallery-item"><a href="../images/p100/sdxl_gpu_only_rep1.png" target="_blank"><img src="../images/p100/sdxl_gpu_only_rep1.png" alt="SDXL GPU only"></a><p>GPU only</p></div>
+  <div class="gallery-item"><a href="../images/p100/sdxl_model_offload_rep1.png" target="_blank"><img src="../images/p100/sdxl_model_offload_rep1.png" alt="SDXL Model offload"></a><p>Model offload</p></div>
+  <div class="gallery-item"><a href="../images/p100/sdxl_sequential_offload_rep1.png" target="_blank"><img src="../images/p100/sdxl_sequential_offload_rep1.png" alt="SDXL Sequential offload"></a><p>Sequential offload</p></div>
+</div>
+<h3>SDXL Turbo</h3>
+<div class="gallery-row">
+  <div class="gallery-item"><a href="../images/p100/sdxl_turbo_gpu_only_rep1.png" target="_blank"><img src="../images/p100/sdxl_turbo_gpu_only_rep1.png" alt="SDXL Turbo GPU only"></a><p>GPU only</p></div>
+  <div class="gallery-item"><a href="../images/p100/sdxl_turbo_model_offload_rep1.png" target="_blank"><img src="../images/p100/sdxl_turbo_model_offload_rep1.png" alt="SDXL Turbo Model offload"></a><p>Model offload</p></div>
+  <div class="gallery-item"><a href="../images/p100/sdxl_turbo_sequential_offload_rep1.png" target="_blank"><img src="../images/p100/sdxl_turbo_sequential_offload_rep1.png" alt="SDXL Turbo Sequential offload"></a><p>Sequential offload</p></div>
+</div>
+<h3>SD 3.5 Medium</h3>
+<div class="gallery-row">
+  <div class="gallery-item"><div class="oom-box">OOM</div><p>GPU only</p></div>
+  <div class="gallery-item"><a href="../images/p100/sd3_5_medium_model_offload_rep1.png" target="_blank"><img src="../images/p100/sd3_5_medium_model_offload_rep1.png" alt="SD 3.5 Medium Model offload"></a><p>Model offload</p></div>
+  <div class="gallery-item"><a href="../images/p100/sd3_5_medium_sequential_offload_rep1.png" target="_blank"><img src="../images/p100/sd3_5_medium_sequential_offload_rep1.png" alt="SD 3.5 Medium Sequential offload"></a><p>Sequential offload</p></div>
+</div>
+<h3>SD 3.5 Large Turbo</h3>
+<div class="gallery-row">
+  <div class="gallery-item"><div class="oom-box">OOM</div><p>GPU only</p></div>
+  <div class="gallery-item"><div class="oom-box">OOM</div><p>Model offload</p></div>
+  <div class="gallery-item"><div class="oom-box">OOM</div><p>Sequential offload</p></div>
+</div>
+<h3>FLUX.1 Schnell</h3>
+<div class="gallery-row">
+  <div class="gallery-item"><div class="oom-box">OOM</div><p>GPU only</p></div>
+  <div class="gallery-item"><div class="oom-box">OOM</div><p>Model offload</p></div>
+  <div class="gallery-item"><div class="oom-box">OOM</div><p>Sequential offload</p></div>
+</div>
+<h3>Kandinsky 2.2</h3>
+<div class="gallery-row">
+  <div class="gallery-item"><a href="../images/p100/kandinsky_2_2_gpu_only_rep1.png" target="_blank"><img src="../images/p100/kandinsky_2_2_gpu_only_rep1.png" alt="Kandinsky 2.2 GPU only"></a><p>GPU only</p></div>
+  <div class="gallery-item"><a href="../images/p100/kandinsky_2_2_model_offload_rep1.png" target="_blank"><img src="../images/p100/kandinsky_2_2_model_offload_rep1.png" alt="Kandinsky 2.2 Model offload"></a><p>Model offload</p></div>
+  <div class="gallery-item"><a href="../images/p100/kandinsky_2_2_sequential_offload_rep1.png" target="_blank"><img src="../images/p100/kandinsky_2_2_sequential_offload_rep1.png" alt="Kandinsky 2.2 Sequential offload"></a><p>Sequential offload</p></div>
+</div>
+<h3>PixArt XL 512</h3>
+<div class="gallery-row">
+  <div class="gallery-item"><a href="../images/p100/pixart_512_gpu_only_rep1.png" target="_blank"><img src="../images/p100/pixart_512_gpu_only_rep1.png" alt="PixArt XL 512 GPU only"></a><p>GPU only</p></div>
+  <div class="gallery-item"><a href="../images/p100/pixart_512_model_offload_rep1.png" target="_blank"><img src="../images/p100/pixart_512_model_offload_rep1.png" alt="PixArt XL 512 Model offload"></a><p>Model offload</p></div>
+  <div class="gallery-item"><a href="../images/p100/pixart_512_sequential_offload_rep1.png" target="_blank"><img src="../images/p100/pixart_512_sequential_offload_rep1.png" alt="PixArt XL 512 Sequential offload"></a><p>Sequential offload</p></div>
+</div>
 
 <hr>
 <p class="note">Raw data: <a href="../data/p100/benchmark_results.json">benchmark_results.json</a></p>
