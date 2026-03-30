@@ -1,94 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image generation benchmark</title>
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; color: #222; }
-    h1 { border-bottom: 2px solid #ddd; padding-bottom: .5rem; }
-    h2 { margin-top: 2rem; }
-    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
-    th, td { border: 1px solid #ccc; padding: .5rem .75rem; text-align: left; }
-    th { background: #f5f5f5; }
-    .card { border: 1px solid #ddd; border-radius: 6px; padding: 1rem 1.5rem; margin: 1rem 0; }
-    .note { color: #888; font-style: italic; }
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      color: #222;
+    }
+
+    h1 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: .5rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1rem 0;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: .5rem .75rem;
+      text-align: left;
+    }
+
+    th {
+      background: #f5f5f5;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .note {
+      color: #888;
+      font-style: italic;
+    }
   </style>
 </head>
+
 <body>
 
-<h1>Image generation benchmark</h1>
+  <h1>Image generation benchmark</h1>
 
-<p>
-  This benchmark compares generation latency, peak GPU VRAM, and peak system RAM
-  across nine text-to-image diffusion models, four execution modes, and two GPU tiers.
-  Each model is run three times per (model, mode) combination after one untimed warmup run.
-</p>
+  <p>
+    This benchmark compares generation latency, peak GPU VRAM, and peak system RAM
+    across nine text-to-image diffusion models, three execution modes, and two GPU tiers.
+    Each model is run five times per (model, mode) combination after one untimed warmup run.
+  </p>
 
-<p><strong>Prompt:</strong> <em>"a turtle and a bird together in a forest"</em></p>
-<p><strong>Output resolution:</strong> 512 × 512 &nbsp;|&nbsp; <strong>Replicates:</strong> 5 timed runs per combination</p>
+  <p><strong>Prompt:</strong> <em>"a turtle and a bird together in a forest"</em></p>
+  <p><strong>Output resolution:</strong> 512 × 512 &nbsp;|&nbsp; <strong>Replicates:</strong> 5 timed runs per
+    combination</p>
 
-<h2>Hardware</h2>
+  <h2>Hardware</h2>
 
-<table>
-  <thead>
-    <tr><th>Label</th><th>GPU</th><th>VRAM</th><th>Architecture</th><th>Results</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>gtx1070</td>
-      <td>NVIDIA GeForce GTX 1070</td>
-      <td>8 GB</td>
-      <td>Pascal (sm_61)</td>
-      <td><a href="gtx1070/">View results →</a></td>
-    </tr>
-    <tr>
-      <td>p100</td>
-      <td>Tesla P100-PCIE</td>
-      <td>16 GB</td>
-      <td>Pascal (sm_60)</td>
-      <td><a href="p100/">View results →</a></td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th>Label</th>
+        <th>GPU</th>
+        <th>VRAM</th>
+        <th>Architecture</th>
+        <th>Results</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>gtx1070</td>
+        <td>GeForce GTX 1070</td>
+        <td>8 GB</td>
+        <td>Pascal (sm_61)</td>
+        <td><a href="gtx1070.html">View results →</a></td>
+      </tr>
+      <tr>
+        <td>p100</td>
+        <td>Tesla P100</td>
+        <td>16 GB</td>
+        <td>Pascal (sm_60)</td>
+        <td><a href="p100.html">View results →</a></td>
+      </tr>
+    </tbody>
+  </table>
 
-<h2>Models</h2>
+  <h2>Models</h2>
 
-<table>
-  <thead>
-    <tr><th>Model</th><th>Generation</th><th>Architecture</th><th>Gated</th><th>Steps</th><th>Paper</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="https://huggingface.co/CompVis/stable-diffusion-v1-4">CompVis/stable-diffusion-v1-4</a></td><td>SD 1.x</td><td>UNet + CLIP</td><td>No</td><td>30</td><td><a href="https://arxiv.org/abs/2112.10752">arXiv:2112.10752</a></td></tr>
-    <tr><td><a href="https://huggingface.co/sd2-community/stable-diffusion-2-1-base">sd2-community/stable-diffusion-2-1-base</a></td><td>SD 2.x</td><td>UNet + OpenCLIP</td><td>No</td><td>30</td><td><a href="https://arxiv.org/abs/2112.10752">arXiv:2112.10752</a></td></tr>
-    <tr><td><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">stabilityai/stable-diffusion-xl-base-1.0</a></td><td>SDXL</td><td>UNet (2×) + dual encoders</td><td>No</td><td>30</td><td><a href="https://arxiv.org/abs/2307.01952">arXiv:2307.01952</a></td></tr>
-    <tr><td><a href="https://huggingface.co/stabilityai/sdxl-turbo">stabilityai/sdxl-turbo</a></td><td>SDXL (distilled)</td><td>UNet (2×) + dual encoders</td><td>No</td><td>4</td><td><a href="https://arxiv.org/abs/2311.17042">arXiv:2311.17042</a></td></tr>
-    <tr><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-medium">stabilityai/stable-diffusion-3.5-medium</a></td><td>SD 3.5</td><td>DiT (MMDiT) + T5</td><td>Yes</td><td>28</td><td><a href="https://arxiv.org/abs/2403.03206">arXiv:2403.03206</a></td></tr>
-    <tr><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo">stabilityai/stable-diffusion-3.5-large-turbo</a></td><td>SD 3.5 (distilled)</td><td>DiT (MMDiT) + T5</td><td>Yes</td><td>4</td><td><a href="https://arxiv.org/abs/2403.03206">arXiv:2403.03206</a></td></tr>
-    <tr><td><a href="https://huggingface.co/black-forest-labs/FLUX.1-schnell">black-forest-labs/FLUX.1-schnell</a></td><td>FLUX</td><td>Flow matching + T5</td><td>Yes</td><td>4</td><td><a href="https://github.com/black-forest-labs/flux">GitHub</a></td></tr>
-    <tr><td><a href="https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder">kandinsky-community/kandinsky-2-2-decoder</a></td><td>Kandinsky 2.2</td><td>Two-stage prior + UNet</td><td>No</td><td>30</td><td><a href="https://arxiv.org/abs/2310.03502">arXiv:2310.03502</a></td></tr>
-    <tr><td><a href="https://huggingface.co/PixArt-alpha/PixArt-XL-2-512x512">PixArt-alpha/PixArt-XL-2-512x512</a></td><td>PixArt</td><td>DiT + T5</td><td>No</td><td>20</td><td><a href="https://arxiv.org/abs/2310.00426">arXiv:2310.00426</a></td></tr>
-  </tbody>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Generation</th>
+        <th>Architecture</th>
+        <th>Gated</th>
+        <th>Steps</th>
+        <th>Paper</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://huggingface.co/CompVis/stable-diffusion-v1-4">CompVis/stable-diffusion-v1-4</a></td>
+        <td>SD 1.x</td>
+        <td>UNet + CLIP</td>
+        <td>No</td>
+        <td>30</td>
+        <td><a href="https://arxiv.org/abs/2112.10752">arXiv:2112.10752</a></td>
+      </tr>
+      <tr>
+        <td><a
+            href="https://huggingface.co/sd2-community/stable-diffusion-2-1-base">sd2-community/stable-diffusion-2-1-base</a>
+        </td>
+        <td>SD 2.x</td>
+        <td>UNet + OpenCLIP</td>
+        <td>No</td>
+        <td>30</td>
+        <td><a href="https://arxiv.org/abs/2112.10752">arXiv:2112.10752</a></td>
+      </tr>
+      <tr>
+        <td><a
+            href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">stabilityai/stable-diffusion-xl-base-1.0</a>
+        </td>
+        <td>SDXL</td>
+        <td>UNet (2×) + dual encoders</td>
+        <td>No</td>
+        <td>30</td>
+        <td><a href="https://arxiv.org/abs/2307.01952">arXiv:2307.01952</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://huggingface.co/stabilityai/sdxl-turbo">stabilityai/sdxl-turbo</a></td>
+        <td>SDXL (distilled)</td>
+        <td>UNet (2×) + dual encoders</td>
+        <td>No</td>
+        <td>4</td>
+        <td><a href="https://arxiv.org/abs/2311.17042">arXiv:2311.17042</a></td>
+      </tr>
+      <tr>
+        <td><a
+            href="https://huggingface.co/stabilityai/stable-diffusion-3.5-medium">stabilityai/stable-diffusion-3.5-medium</a>
+        </td>
+        <td>SD 3.5</td>
+        <td>DiT (MMDiT) + T5</td>
+        <td>Yes</td>
+        <td>28</td>
+        <td><a href="https://arxiv.org/abs/2403.03206">arXiv:2403.03206</a></td>
+      </tr>
+      <tr>
+        <td><a
+            href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo">stabilityai/stable-diffusion-3.5-large-turbo</a>
+        </td>
+        <td>SD 3.5 (distilled)</td>
+        <td>DiT (MMDiT) + T5</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td><a href="https://arxiv.org/abs/2403.03206">arXiv:2403.03206</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://huggingface.co/black-forest-labs/FLUX.1-schnell">black-forest-labs/FLUX.1-schnell</a></td>
+        <td>FLUX</td>
+        <td>Flow matching + T5</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td><a href="https://github.com/black-forest-labs/flux">GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a
+            href="https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder">kandinsky-community/kandinsky-2-2-decoder</a>
+        </td>
+        <td>Kandinsky 2.2</td>
+        <td>Two-stage prior + UNet</td>
+        <td>No</td>
+        <td>30</td>
+        <td><a href="https://arxiv.org/abs/2310.03502">arXiv:2310.03502</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://huggingface.co/PixArt-alpha/PixArt-XL-2-512x512">PixArt-alpha/PixArt-XL-2-512x512</a></td>
+        <td>PixArt</td>
+        <td>DiT + T5</td>
+        <td>No</td>
+        <td>20</td>
+        <td><a href="https://arxiv.org/abs/2310.00426">arXiv:2310.00426</a></td>
+      </tr>
+    </tbody>
+  </table>
 
-<h2>Execution modes</h2>
+  <h2>Execution modes</h2>
 
-<table>
-  <thead>
-    <tr><th>Mode</th><th>Description</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><code>gpu_only</code></td><td>Full model loaded to GPU VRAM in fp16</td></tr>
-    <tr><td><code>model_offload</code></td><td><code>enable_model_cpu_offload()</code>, submodels paged to GPU one at a time</td></tr>
-    <tr><td><code>sequential_offload</code></td><td><code>enable_sequential_cpu_offload()</code>, individual layers moved layer-by-layer</td></tr>
-  </tbody>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th>Mode</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>gpu_only</code></td>
+        <td>Full model loaded to GPU VRAM in fp16</td>
+      </tr>
+      <tr>
+        <td><code>model_offload</code></td>
+        <td><code>enable_model_cpu_offload()</code>, submodels paged to GPU one at a time</td>
+      </tr>
+      <tr>
+        <td><code>sequential_offload</code></td>
+        <td><code>enable_sequential_cpu_offload()</code>, individual layers moved layer-by-layer</td>
+      </tr>
+    </tbody>
+  </table>
 
-<hr>
-<p class="note">
-  Raw data: <a href="data/gtx1070/benchmark_results.json">data/gtx1070/benchmark_results.json</a> &nbsp;|&nbsp;
-  <a href="data/p100/benchmark_results.json">data/p100/benchmark_results.json</a>
-</p>
+  <hr>
+  <p class="note">
+    Raw data: <a href="data/gtx1070/benchmark_results.json">data/gtx1070/benchmark_results.json</a> &nbsp;|&nbsp;
+    <a href="data/p100/benchmark_results.json">data/p100/benchmark_results.json</a>
+  </p>
 
 </body>
+
 </html>

@@ -3,7 +3,7 @@ Image-generation benchmark - compares model latency and memory usage across
 diffusion models and execution modes on a single GPU.
 
 Results are written to:
-    docs/data/{hardware}/benchmark_results.json
+    image_gen_benchmark/results/{hardware}/benchmark_results.json
     docs/images/{hardware}/{model_short}_{mode}_rep{n}.png
 
 Run from the repository root:
@@ -98,7 +98,7 @@ MODELS: dict[str, tuple] = {
     'stabilityai/stable-diffusion-xl-base-1.0':     ('StableDiffusionXLPipeline',    30, 'sdxl',              {}),
     'stabilityai/sdxl-turbo':                       ('StableDiffusionXLPipeline',    4,  'sdxl_turbo',        {'guidance_scale': 0.0}),
     'stabilityai/stable-diffusion-3.5-medium':      ('StableDiffusion3Pipeline',     28, 'sd3_5_medium',      {}),
-    'stabilityai/stable-diffusion-3.5-large-turbo': ('StableDiffusion3Pipeline',     4,  'sd3_5_large_turbo', {}),
+    'stabilityai/stable-diffusion-3.5-large-turbo': ('StableDiffusion3Pipeline',     4,  'sd3_5_large_turbo', {'guidance_scale': 0.0}),
     'black-forest-labs/FLUX.1-schnell':             ('FluxPipeline',                 4,  'flux_schnell',      {}),
     'kandinsky-community/kandinsky-2-2-decoder':    ('KandinskyV22CombinedPipeline', 30, 'kandinsky_2_2',     {}),
     'PixArt-alpha/PixArt-XL-2-512x512':             ('PixArtAlphaPipeline',          20, 'pixart_512',        {}),
@@ -207,7 +207,7 @@ def _cleanup(pipe) -> None:
 # ---------------------------------------------------------------------------
 
 def run_benchmark(hardware: str) -> list[dict]:
-    results_dir = _DOCS_ROOT / 'data' / hardware
+    results_dir = _REPO_ROOT / 'image_gen_benchmark' / 'results' / hardware
     images_dir = _DOCS_ROOT / 'images' / hardware
     results_file = results_dir / 'benchmark_results.json'
 
@@ -418,9 +418,9 @@ if __name__ == '__main__':
 
     print(f'Hardware label  : {hardware}')
     print(f'HF_HOME         : {os.environ["HF_HOME"]}')
-    print(f'Results dir     : {_DOCS_ROOT / "data" / hardware}')
+    print(f'Results dir     : {_REPO_ROOT / "image_gen_benchmark" / "results" / hardware}')
 
     results = run_benchmark(hardware)
 
     print(f'\nBenchmark complete. {len(results)} entries written to:')
-    print(f'  {_DOCS_ROOT / "data" / hardware / "benchmark_results.json"}')
+    print(f'  {_REPO_ROOT / "image_gen_benchmark" / "results" / hardware / "benchmark_results.json"}')
