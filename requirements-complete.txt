@@ -16,6 +16,7 @@ accelerate
 diffusers
 sentencepiece
 beautifulsoup4
+matplotlib
 
 # --- LangChain stack (hr_assistant) ------------------------------------------
 langchain

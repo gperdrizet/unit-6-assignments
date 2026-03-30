@@ -19,3 +19,4 @@ beautifulsoup4      # caption cleaning used by some diffusers pipelines
 
 # --- Benchmark ---------------------------------------------------------------
 psutil              # system RAM polling in src/memory_monitor.py
+matplotlib          # plotting
