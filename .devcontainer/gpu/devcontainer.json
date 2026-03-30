@@ -64,6 +64,9 @@
 		"7860": {
 			"label": "Gradio",
 			"onAutoForward": "notify"
+		},
+		"8000": {
+			"label": "html"
 		}
 	},
 
