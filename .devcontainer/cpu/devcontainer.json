@@ -3,7 +3,7 @@
 {
 	// Container definition for CPU only LLM application development environment
 	"name": "LLM devcontainer CPU",
-	"image": "gperdrizet/llms-cpu",
+	"image": "gperdrizet/llms-cpu:3.3.0",
     "runArgs": [
 		"--network=bridge"            // Explicitly use bridge network for internet access
 	],
