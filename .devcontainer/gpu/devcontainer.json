@@ -3,7 +3,7 @@
 {
 	// Container definition LLM application development environment
 	"name": "LLM devcontainer GPU",
-	"image": "gperdrizet/llms-gpu:3.3.0",
+	"image": "gperdrizet/llms-gpu",
     "runArgs": [
 		"--gpus", "all",              // Enable all available GPUs in the container
 		"--pid=host",                 // Use host PIDs, needed for nvidia-smi process list
